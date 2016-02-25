@@ -6,6 +6,7 @@
 </head>
 <body>
     <?= $app->Classes->all(); ?>
+    <?= var_dump($app); ?>
 </body>
 <script src="script.js"></script>
 </html>
