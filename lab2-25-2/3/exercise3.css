@@ -1,0 +1,22 @@
+html, body{ padding: 0; margin: 0; }
+#road{
+	position: absolute;
+	z-index: -1;
+	width: 965px;
+	height: 497px;
+	background: url('yellowbrickroad.jpg');
+}
+#brick{
+	position: absolute;
+	top: 433px;
+	left: 289px;
+	background: url('brick.png') no-repeat;
+	width: 180px;
+	height: 34px;
+	transition: top 2s;
+}
+
+#brick:hover{
+	top: 380px;
+	transform: transltae(0,40);
+}
