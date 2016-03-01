@@ -5,8 +5,8 @@ ini_set('display_errors', 'On');
 
 $config = (object)[
     'db' => [
-        'host' => 'localhost',
-        'database' => 'cmsc433',
+        'host' => 'development.dev',
+        'database' => 'cmsc433-proj1',
         'username' => 'devdb',
         'password' => 'devdb'
     ]

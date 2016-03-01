@@ -5,15 +5,23 @@ class DB extends BaseClass
     const inject = true;
     private $config;
 
-    public function __construct($config){
+    public function __construct($config)
+    {
         $this->config = $config->db;
     }
 
-    public function query(){
-
+    protected function get_connection()
+    {
+        return null;
     }
 
-    public function all(){
+    public function query()
+    {
+        return null;
+    }
 
+    public function all()
+    {
+        return null;
     }
 }
