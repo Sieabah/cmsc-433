@@ -6,12 +6,14 @@ class DB extends BaseClass
     private $config;
     private static $connection = null;
 
-    protected $table;
+    protected $table = null;
+
+    protected $wheres = [];
+    protected $bindings = [];
 
     public function __construct($config)
     {
         $this->config = $config->db;
-        $this->table = null;
     }
 
     private function build_connection()
@@ -34,21 +36,66 @@ class DB extends BaseClass
         return DB::$connection;
     }
 
+    protected function get_last_insert(){
+        return $this->get_connection()->lastInsertId();
+    }
+
     public function query($statement, $arguments=[])
     {
         try {
             $conn = $this->get_connection();
 
             $query = $conn->prepare($statement);
-            return $query->execute($arguments);
+            $query->execute($arguments);
+
+            return $query;
         } catch(PDOException $e){
             die($e->getMessage());
         }
     }
 
+    public function raw($statement){
+        try{
+            $conn = $this->get_connection();
+
+            return $conn->query($statement);
+        } catch(PDOException $e){
+            die($e->getMessage());
+        }
+    }
+
+    public function newQuery(){
+        $this->bindings = [];
+        $this->wheres = [];
+
+        return $this;
+    }
+
+    public function select($column, $value){
+        return null;
+    }
+
     public function all()
     {
-        var_dump($this->table);
-        return $this->query('SELECT * FROM classes');
+        return $this->query('SELECT * FROM `'.$this->table.'`')->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public function create($arr){
+        $args = [];
+
+        $str = 'INSERT INTO `'.$this->table.'` ';
+
+        $parameters = [];
+        $columns = [];
+        foreach($arr as $value => $parameter){
+            $args[] = $parameter;
+            $parameters[] = '?';
+            $columns[] = '`'.$value.'`';
+        }
+
+        $str .= "(".implode(", ", $columns).") VALUES (".implode(", ", $parameters).");";
+
+        $this->query($str, $args);
+        return $this->get_last_insert();
     }
 }

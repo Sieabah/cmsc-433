@@ -1,0 +1,214 @@
+{
+  "cmsc": {
+    "201": {
+      "name": "Computer Science I for Majors"
+    },
+    "202": {
+      "name": "Computer Science II for Majors",
+      "req": ["cmsc201"]
+    },
+    "203": {
+      "name": "Discrete Structures"
+    },
+    "232": {
+      "name": "Advanced Java Techniques",
+      "req": ["cmsc202"]
+    },
+    "291": {
+      "name": "Special Topics in Computer Science"
+    },
+    "299": {
+      "name": "Independent Study in Computer Science"
+    },
+    "304": {
+      "name": "Social and Ethical Issues in Information Technology",
+      "req": ["cmsc202"]
+    },
+    "313": {
+      "name": "Computer Organization and Assembly Language Programming",
+      "req": ["cmsc202","cmsc203"]
+    },
+    "331": {
+      "name": "Principles of Programming Language",
+      "req": ["cmsc202","cmsc203"]
+    },
+    "341": {
+      "name": "Data Structures",
+      "req": ["cmsc202","cmsc203"]
+    },
+    "345": {
+      "name": "Software Design and Development",
+      "req": ["cmsc341"]
+    },
+    "351": {
+      "name": "Women, Gender, and Information Technology",
+      "req": ["any"]
+    },
+    "391": {
+      "name": "Special Topics in Computer Science"
+    },
+    "404": {
+      "name": "The History of Computers and Computing"
+    },
+    "411": {
+      "name": "Computer Architecture",
+      "req": ["cmsc313"]
+    },
+    "421": {
+      "name": "Principles of Operating Systems",
+      "req": ["cmsc341","cmsc313"]
+    },
+    "426": {
+      "name": "Principles of Computer Security",
+      "req": ["cmsc341","cmsc313"]
+    },
+    "431": {
+      "name": "Compiler Design Principles",
+      "req": ["cmsc313","cmsc331","cmsc341"]
+    },
+    "432": {
+      "name": "Object-Oriented Programming Languages and Systems",
+      "req": ["cmsc331","cmsc341"]
+    },
+    "433": {
+      "name": "Scripting Languages",
+      "req": ["cmsc331"]
+    },
+    "435": {
+      "name": "Computer Graphics",
+      "req": ["cmsc313","cmsc341"]
+    },
+    "436": {
+      "name": "Data Visualization",
+      "req": ["cmsc341"]
+    },
+    "437": {
+      "name": "Graphical User Interface Programming",
+      "req": ["cmsc341"]
+    },
+    "441": {
+      "name": "Design and Analysis of Algorithms",
+      "req": ["cmsc341"]
+    },
+    "442": {
+      "name": "Information and Coding Theory",
+      "req": ["cmsc203"]
+    },
+    "443": {
+      "name": "Cryptology",
+      "req": ["cmsc341"]
+    },
+    "444": {
+      "name": "Information Assurance",
+      "req": ["cmsc421", "cmsc481"]
+    },
+    "446": {
+      "name": "Introduction to Design Patterns",
+      "req": ["cmsc331", "cmsc341"]
+    },
+    "447": {
+      "name": "Software Engineering I",
+      "req": ["cmsc341", "any"]
+    },
+    "448": {
+      "name": "Software Engineering II",
+      "req": ["cmsc345,cmsc447"]
+    },
+    "451": {
+      "name": "Automata Theory and Formal Languages",
+      "req": ["cmsc202","cmsc203"]
+    },
+    "452": {
+      "name": "Logic for Computer Science",
+      "req": ["cmsc203"]
+    },
+    "453": {
+      "name": "Applied Combinatorics and Graph Theory",
+      "req": ["cmsc341"]
+    },
+    "455": {
+      "name": "Numerical Computations",
+      "req": ["cmsc341"]
+    },
+    "456": {
+      "name": "Symbolic Computation",
+      "req": ["cmsc341"]
+    },
+    "457": {
+      "name": "Quantum Computation",
+      "req": ["cmsc203"]
+    },
+    "461": {
+      "name": "Database Management Systems",
+      "req": ["cmsc341"]
+    },
+    "465": {
+      "name": "Introduction to Electronic Commerce",
+      "req": ["cmsc461","cmsc481"]
+    },
+    "466": {
+      "name": "Electronic Commerce Technology",
+      "req": ["cmsc461","cmsc481"]
+    },
+    "471": {
+      "name": "Introduction to Artificial Intelligence",
+      "req": ["cmsc341"]
+    },
+    "473": {
+      "name": "Introduction to Natural Language Processing",
+      "req": ["cmsc331"]
+    },
+    "475": {
+      "name": "Introduction to Neural Networks",
+      "req": ["cmsc341"]
+    },
+    "476": {
+      "name": "Information Retrieval",
+      "req": ["cmsc341"]
+    },
+    "477": {
+      "name": "Agent Architectures and Multi-Agent Systems",
+      "req": ["cmsc471"]
+    },
+    "478": {
+      "name": "Introduction to Machine Learning",
+      "req": ["cmsc471"]
+    },
+    "479": {
+      "name": "Introduction to Robotics",
+      "req": ["cmsc471"]
+    },
+    "481": {
+      "name": "Computer Networks",
+      "req": ["cmsc341"]
+    },
+    "483": {
+      "name": "Parallel and Distributed Processing",
+      "req": ["cmsc421"]
+    },
+    "484": {
+      "name": "Java Server Technologies",
+      "req": ["cmsc202"]
+    },
+    "487": {
+      "name": "Introduction To Network Security",
+      "req": ["cmsc421","cmsc481"]
+    },
+    "491": {
+      "name": "Special Topics in Computer Science"
+    },
+    "493": {
+      "name": "Capstone Games Group Project",
+      "req": ["cmsc435", "cmsc471"]
+    },
+    "495": {
+      "name": "Honors Thesis"
+    },
+    "498": {
+      "name": "Independent Study in Computer Science for CMSC Interns and Coop Students"
+    },
+    "499": {
+      "name": "Independent Study in Computer Science"
+    }
+  }
+}

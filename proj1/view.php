@@ -5,8 +5,10 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <?= '<pre>',$app->StudentClass->all(),'</pre>'; ?>
-    <?= var_dump($app); ?>
+    <div style="word-wrap: break-word">
+        <?= '<pre>',print_r($app->StudentClass->all()),'</pre>'; ?>
+        <?= var_dump($app); ?>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

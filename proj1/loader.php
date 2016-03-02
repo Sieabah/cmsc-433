@@ -2,6 +2,7 @@
 
 require_once('config.php');
 
+global $app;
 $app = (object)[];
 
 spl_autoload_register(function($class_name){
@@ -18,3 +19,5 @@ foreach($files as $file){
     if($name::inject)
         $app->$name = new $name($config);
 }
+
+$app->config = $config;
