@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-$config = (object)[
+$config = [
     'db' => [
         'host' => 'db.dev',
         'database' => 'cmsc433-proj1',
@@ -16,3 +16,19 @@ $config = (object)[
         'resources' => getcwd().'/resources'
     ]
 ];
+
+function config($name){
+    $depth = explode('.', $name);
+
+    global $config;
+
+    $curLevel = $config;
+
+    foreach($depth as $level){
+        if(isset($curLevel[$level])){
+            $curLevel = $curLevel[$level];
+        }
+    }
+
+    return $curLevel;
+}

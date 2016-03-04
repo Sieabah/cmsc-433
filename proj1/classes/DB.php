@@ -3,7 +3,6 @@
 class DB extends BaseClass
 {
     const inject = true;
-    private $config;
     private static $connection = null;
 
     protected $table = null;
@@ -13,15 +12,14 @@ class DB extends BaseClass
 
     public function __construct($config)
     {
-        $this->config = $config->db;
     }
 
     private function build_connection()
     {
         $handler = new PDO(
-            'mysql:host='.$this->config['host'].';dbname='.$this->config['database'],
-            $this->config['username'],
-            $this->config['password']);
+            'mysql:host='.config('db.host').';dbname='.config('db.database'),
+            config('db.username'),
+            config('db.password'));
         $handler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         return $handler;
