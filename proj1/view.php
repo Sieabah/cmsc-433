@@ -7,7 +7,6 @@
 <body>
     <div style="word-wrap: break-word">
         <?= '<pre>',print_r($app->StudentClass->all()),'</pre>'; ?>
-        <?= var_dump($app); ?>
     </div>
 </body>
 <script src="script.js"></script>

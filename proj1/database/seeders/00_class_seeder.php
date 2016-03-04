@@ -6,7 +6,7 @@ class class_seeder
     {
         global $app;
 
-        $classes = json_decode(file_get_contents($app->config->directories['resources'].'/classes.json'));
+        $classes = json_decode(file_get_contents(resource_path().'/classes.json'));
 
         $catalog = [];
 
