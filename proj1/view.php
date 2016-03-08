@@ -6,7 +6,18 @@
 </head>
 <body>
     <div style="word-wrap: break-word">
-        <?= '<pre>',print_r($app->StudentClass->all()),'</pre>'; ?>
+        <?php
+            $classes = $app->StudentClass->all();
+
+            foreach($classes as $class):
+                $class->prereq = [];
+                $prereq = $app->StudentClass->prerequisite($class->id);
+                foreach($prereq as $req) {
+                    $class->prereq[] = $req;
+                }
+            ?>
+                <pre><?= print_r($class); ?></pre>
+        <?php endforeach; ?>
     </div>
 </body>
 <script src="script.js"></script>
