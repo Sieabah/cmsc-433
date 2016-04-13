@@ -6,7 +6,7 @@
 </head>
 <body>
     <div style="word-wrap: break-word">
-        <pre><?= print_r($list); ?></pre>
+        <pre><?= print_r($available); ?></pre>
     </div>
 </body>
 <script src="/js/script.js"></script>
