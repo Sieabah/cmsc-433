@@ -3,6 +3,10 @@
 ## Contributers
 - Christopher Sidell
 
+## Requirements
+- A PHP 5 or higher installation.
+- A MariaDB or MySQL installation.
+
 ## How to start
 Before anything you will need to setup the database and change the relevant information in config.php.
 
