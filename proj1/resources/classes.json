@@ -93,7 +93,7 @@
     },
     "351": {
       "name": "Women, Gender, and Information Technology",
-      "req": ["any"]
+      "req": ["cmsc201|cmsc203"]
     },
     "391": {
       "name": "Special Topics in Computer Science"
@@ -159,7 +159,7 @@
     },
     "447": {
       "name": "Software Engineering I",
-      "req": ["cmsc341", "any"]
+      "req": ["cmsc341"]
     },
     "448": {
       "name": "Software Engineering II",
