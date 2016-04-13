@@ -1,15 +1,15 @@
 <?php
 
-require_once('helpers.php');
-
 global $app;
 $app = (object)[];
 
+require_once('helpers.php');
+
 spl_autoload_register(function($class_name){
-    include 'classes/'.$class_name.'.php';
+    include config('directories.base').'classes/'.$class_name.'.php';
 });
 
-$directory = 'classes';
+$directory = dirname(__FILE__).'/classes';
 $files = scandir($directory);
 foreach($files as $file){
     if(in_array($file, ['.','..'])) continue;
@@ -17,7 +17,7 @@ foreach($files as $file){
     $name = explode('.', $file)[0];
 
     if($name::inject)
-        $app->$name = new $name($config);
+        $app->$name = new $name(app()->config);
 }
 
-$app->config = $config;
+router()->build();

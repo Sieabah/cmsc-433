@@ -1,6 +1,6 @@
 <?php
 
-$config = [
+app()->config = [
     'db' => [
         'host' => 'db.dev',
         'database' => 'cmsc433-proj1',
@@ -8,8 +8,8 @@ $config = [
         'password' => 'devdb'
     ],
     'directories' => [
-        'base' => getcwd(),
-        'public' => getcwd().'/public',
-        'resources' => getcwd().'/resources'
+        'base' => dirname(__FILE__).'/../',
+        'public' => dirname(__FILE__).'/../public',
+        'resources' => dirname(__FILE__).'/../resources'
     ]
 ];
