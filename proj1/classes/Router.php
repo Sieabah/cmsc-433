@@ -35,11 +35,12 @@ class Router extends BaseClass
     public function action($route){
         $route = $this->parseRoute($route);
 
-        $path = explode('@',$this->routes[$_SERVER['REQUEST_METHOD']][$route]);
+        if(isset($this->routes[$_SERVER['REQUEST_METHOD']][$route])) {
+            $path = explode('@',$this->routes[$_SERVER['REQUEST_METHOD']][$route]);
 
-        if(isset($this->routes[$_SERVER['REQUEST_METHOD']][$route]))
             return (new $path[0])->$path[1]();
+        }
         else
-            return '404';
+            return '<h1>404</h1>';
     }
 }
