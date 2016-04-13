@@ -31,5 +31,13 @@ function resource_path(){
 
 function router()
 {
-    return app()->Router;
+    return app()->router;
+}
+
+function session(){
+    return app()->session;
+}
+
+function view(){
+    return (new View);
 }

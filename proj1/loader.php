@@ -15,9 +15,10 @@ foreach($files as $file){
     if(in_array($file, ['.','..'])) continue;
 
     $name = explode('.', $file)[0];
+    $lname = strtolower($name);
 
     if($name::inject)
-        $app->$name = new $name(app()->config);
+        $app->$lname = new $name(app()->config);
 }
 
 router()->build();
