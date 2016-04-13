@@ -4,8 +4,6 @@ class class_seeder
 {
     public function run()
     {
-        global $app;
-
         $classes = json_decode(file_get_contents(resource_path().'/classes.json'));
 
         $catalog = [];
@@ -33,7 +31,7 @@ class class_seeder
                         $or = count($courses) > 1;
 
                         foreach($courses as $req){
-                            $app->Prerequisite->create([
+                            app()->prerequisite->create([
                                 'class_id' => $catalog[$name][$course],
                                 'prereq_id' => $req != 'any' ? $catalog[$name][$req] : 0,
                                 'or' => $or ? 1 : 0
