@@ -11,7 +11,7 @@ class class_seeder
         foreach($classes as $name => $department) {
             $catalog[$name] = [];
             foreach ($department as $number => $class) {
-                $catalog[$name][$name . $number] = $app->StudentClass->create([
+                $catalog[$name][$name . $number] = app()->studentclass->create([
                     'name' => $class->name,
                     'course' => $name . $number,
                     'number' => $number,
