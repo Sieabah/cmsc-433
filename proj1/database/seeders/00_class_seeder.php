@@ -4,7 +4,7 @@ class class_seeder
 {
     public function run()
     {
-        $classes = json_decode(file_get_contents(resource_path().'/classes.json'));
+        $classes = json_decode(file_get_contents(config('directories.resources').'/classes.json'));
 
         $catalog = [];
 
