@@ -20,7 +20,6 @@ class class_seeder
             }
         }
 
-
         foreach($classes as $name => $department) {
             foreach ($department as $number => $class) {
                 $course = strtolower($name.$number);
@@ -31,11 +30,20 @@ class class_seeder
                         $or = count($courses) > 1;
 
                         foreach($courses as $req){
-                            app()->prerequisite->create([
-                                'class_id' => $catalog[$name][$course],
-                                'prereq_id' => $req != 'any' ? $catalog[$name][$req] : 0,
-                                'or' => $or ? 1 : 0
-                            ]);
+                            $matches = [];
+                            $num = preg_match('/([^\d]+)\d+/', $req, $matches);
+
+                            if($num > 0)
+                                $reqName = $matches[1];
+                            else
+                                $reqName = $name;
+
+                            if(isset($catalog[$reqName][$req]))
+                                app()->prerequisite->create([
+                                    'class_id' => $catalog[$name][$course],
+                                    'prereq_id' => $req != 'any' ? $catalog[$reqName][$req] : 0,
+                                    'or' => $or ? 1 : 0
+                                ]);
                         }
                     }
                 }
