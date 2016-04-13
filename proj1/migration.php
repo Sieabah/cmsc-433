@@ -71,4 +71,4 @@ class Migration {
 
 }
 
-(new Migration('database'))->migrate(array_slice($argv, 1));
+(new Migration(config('directories.base').'database'))->migrate(array_slice($argv, 1));
