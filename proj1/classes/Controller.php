@@ -4,6 +4,8 @@
 class Controller extends BaseClass
 {
     public function index(){
-        return 'test';
+        return view()->make('view');
     }
+    
+    
 }

@@ -5,9 +5,7 @@ class StudentClass extends DB
     protected $table = 'classes';
 
     public function prerequisite($course){
-        global $app;
-
-        return $app->Prerequisite->get($course);
+        return app()->prerequisite->get($course);
     }
 
     public function get($course){

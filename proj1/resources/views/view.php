@@ -2,16 +2,16 @@
 <html>
 <head>
     <title>CMSC 433 - Proj 1</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
 </head>
 <body>
     <div style="word-wrap: break-word">
         <?php
-            $classes = $app->StudentClass->all();
+            $classes = app()->studentclass->all();
 
             foreach($classes as $class):
                 $class->prereq = [];
-                $prereq = $app->StudentClass->prerequisite($class->id);
+                $prereq = app()->studentclass->prerequisite($class->id);
                 foreach($prereq as $req) {
                     $class->prereq[] = $req;
                 }
@@ -20,5 +20,5 @@
         <?php endforeach; ?>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="/js/script.js"></script>
 </html>
