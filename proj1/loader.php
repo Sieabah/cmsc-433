@@ -1,23 +1,24 @@
 <?php
 
-require_once('helpers.php');
-
 global $app;
 $app = (object)[];
 
+require_once('helpers.php');
+
 spl_autoload_register(function($class_name){
-    include 'classes/'.$class_name.'.php';
+    include config('directories.base').'classes/'.$class_name.'.php';
 });
 
-$directory = 'classes';
+$directory = dirname(__FILE__).'/classes';
 $files = scandir($directory);
 foreach($files as $file){
     if(in_array($file, ['.','..'])) continue;
 
     $name = explode('.', $file)[0];
+    $lname = strtolower($name);
 
     if($name::inject)
-        $app->$name = new $name($config);
+        $app->$lname = new $name(app()->config);
 }
 
-$app->config = $config;
+router()->build();

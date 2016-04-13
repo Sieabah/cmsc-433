@@ -4,8 +4,6 @@ class class_seeder
 {
     public function run()
     {
-        global $app;
-
         $classes = json_decode(file_get_contents(resource_path().'/classes.json'));
 
         $catalog = [];
@@ -13,7 +11,7 @@ class class_seeder
         foreach($classes as $name => $department) {
             $catalog[$name] = [];
             foreach ($department as $number => $class) {
-                $catalog[$name][$name . $number] = $app->StudentClass->create([
+                $catalog[$name][$name . $number] = app()->studentclass->create([
                     'name' => $class->name,
                     'course' => $name . $number,
                     'number' => $number,
@@ -21,7 +19,6 @@ class class_seeder
                 ]);
             }
         }
-
 
         foreach($classes as $name => $department) {
             foreach ($department as $number => $class) {
@@ -33,11 +30,20 @@ class class_seeder
                         $or = count($courses) > 1;
 
                         foreach($courses as $req){
-                            $app->Prerequisite->create([
-                                'class_id' => $catalog[$name][$course],
-                                'prereq_id' => $req != 'any' ? $catalog[$name][$req] : 0,
-                                'or' => $or ? 1 : 0
-                            ]);
+                            $matches = [];
+                            $num = preg_match('/([^\d]+)\d+/', $req, $matches);
+
+                            if($num > 0)
+                                $reqName = $matches[1];
+                            else
+                                $reqName = $name;
+
+                            if(isset($catalog[$reqName][$req]))
+                                app()->prerequisite->create([
+                                    'class_id' => $catalog[$name][$course],
+                                    'prereq_id' => $req != 'any' ? $catalog[$reqName][$req] : 0,
+                                    'or' => $or ? 1 : 0
+                                ]);
                         }
                     }
                 }

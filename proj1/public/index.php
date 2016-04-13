@@ -1,10 +1,10 @@
 <?php
 
+session_start();
+
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-chdir('..');
+require_once(dirname(__FILE__).'/../loader.php');
 
-require_once('loader.php');
-
-include('view.php');
+echo app()->router->action($_SERVER['REQUEST_URI']);

@@ -1,4 +1,55 @@
 {
+  "stat": {
+    "355": {
+      "name": "Introduction to Probability and Statistics for Scientists and Engineers",
+      "req": ["math142,math152,math225,math251"]
+    }
+  },
+  "math": {
+    "106": {
+      "name": "Algebra and Elementary Functions"
+    },
+    "140": {
+      "name": "Differential Calculus",
+      "req": ["math150"]
+    },
+    "141": {
+      "name": "Integral Calculus",
+      "req": ["math140"]
+    },
+    "142": {
+      "name": "Calculus Applications and Infinite Series",
+      "req": ["math141"]
+    },
+    "150": {
+      "name": "Precalculus Mathematics",
+      "req": ["math106"]
+    },
+    "151": {
+      "name": "Calculus and Analytic Geometry I",
+      "req": ["math150"]
+    },
+    "152": {
+      "name": "Calculus and Analytic Geometry II",
+      "req": ["math151,math141,math155B"]
+    },
+    "155": {
+      "name": "Applied Calculus",
+      "req": ["math106"]
+    },
+    "155b": {
+      "name": "Calculus of Trigonometric Functions",
+      "req": ["math155"]
+    },
+    "225": {
+      "name": "Introduction to Differential Equations",
+      "req": ["math142,math152"]
+    },
+    "251": {
+      "name": "Multivariable Calculus",
+      "req": ["math142,math152"]
+    }
+  },
   "cmsc": {
     "201": {
       "name": "Computer Science I for Majors"
@@ -42,7 +93,6 @@
     },
     "351": {
       "name": "Women, Gender, and Information Technology",
-      "req": ["any"]
     },
     "391": {
       "name": "Special Topics in Computer Science"
@@ -88,7 +138,7 @@
     },
     "441": {
       "name": "Design and Analysis of Algorithms",
-      "req": ["cmsc341"]
+      "req": ["cmsc341", "stat355"]
     },
     "442": {
       "name": "Information and Coding Theory",
@@ -108,7 +158,7 @@
     },
     "447": {
       "name": "Software Engineering I",
-      "req": ["cmsc341", "any"]
+      "req": ["cmsc341"]
     },
     "448": {
       "name": "Software Engineering II",

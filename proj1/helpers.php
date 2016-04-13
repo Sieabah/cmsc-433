@@ -2,18 +2,23 @@
 
 require_once('config/config.php');
 
+function app(){
+    global $app;
+    return $app;
+}
+
 function config($name = null){
     if(is_null($name)) return null;
 
     $depth = explode('.', $name);
-
-    global $config;
-
-    $curLevel = $config;
+    
+    $curLevel = app()->config;
 
     foreach($depth as $level){
-        if(isset($curLevel[$level])){
+        if(isset($curLevel[$level])) {
             $curLevel = $curLevel[$level];
+        } else {
+            return null;
         }
     }
 
@@ -22,4 +27,17 @@ function config($name = null){
 
 function resource_path(){
     return config('directories.resources');
+}
+
+function router()
+{
+    return app()->router;
+}
+
+function session(){
+    return app()->session;
+}
+
+function view(){
+    return (new View);
 }

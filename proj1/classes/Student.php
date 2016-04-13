@@ -5,9 +5,7 @@ class Student extends DB
     protected $table = 'prerequisites';
 
     public function get($course){
-        global $app;
-
-        return $app->DB->query(
+        return app()->db->query(
             'SELECT classes.* '
             .'FROM prerequisites '
             .'INNER JOIN classes '
