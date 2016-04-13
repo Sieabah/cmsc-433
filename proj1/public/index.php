@@ -3,8 +3,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-chdir('..');
-
-require_once('loader.php');
+require_once(dirname(__FILE__)/'../loader.php');
 
 include('view.php');
