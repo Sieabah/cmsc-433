@@ -7,7 +7,10 @@ class StudentClass extends DB
     public function prerequisite($course){
         return app()->prerequisite->get($course);
     }
-
+	
+	/**
+	Gets all classes in the database, as well as their prerequisites.
+	*/
     public function getList(){
         $classes = $this->all();
 
@@ -22,6 +25,9 @@ class StudentClass extends DB
         return $classes;
     }
 
+	/**
+	Gets all classes that can be taken given already taken classes.
+	*/
     public function availableClasses($taken){
         $classes = $this->getList();
         $canTake = [];

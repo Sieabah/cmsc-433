@@ -14,19 +14,38 @@
                 <div class="col-xs-6">
                     <h3>All Available Classes</h3>
                     <ul>
-                        <?php foreach($allClasses as $class): ?>
-
-                            <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
-                        <?php endforeach; ?>
+					<?php
+						//Make our initial DB connection.
+						require("../classes/StudentClass.php");
+						$classDB = new StudentClass() or die("Couldn't initialize connection to student database.\n");
+					
+						//Get the list of all classses.
+						$allClasses = $classDB->getList();
+						
+                        foreach($allClasses as $class) {
+                            echo sprintf("\t\t\t\t\t\t<li><strong>%s</strong>%s</li><br>\n", strtoupper($class->course), $class->name);
+                        }
+					?>
                     </ul>
                 </div>
                 <div class="col-xs-6">
                     <h3>Classes you can take</h3>
                     <ul>
-                        <?php foreach($available as $class): ?>
-
-                            <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
-                        <?php endforeach; ?>
+					<?php
+						require("../classes/Session.php");
+					
+						//Does this student have any classes in their session?
+						//If so, pull those to get our next classes.
+						$taken = Session::get("taken", array());
+						
+						//Use that to get available classes.
+						$available = $classDB->availableClasses($taken);
+						
+						//Display the takeable classes now.
+                        foreach($available as $class) {
+							echo sprintf("\t\t\t\t\t\t<li><strong>%s</strong>%s</li><br>\n", strtoupper($class->course), $class->name);
+						}
+					?>
                     </ul>
                 </div>
             </div>
