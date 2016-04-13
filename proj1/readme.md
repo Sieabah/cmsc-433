@@ -10,6 +10,14 @@
 ## How to start
 Before anything you will need to setup the database and change the relevant information in config.php.
 
+### Setup Mysql user
+This guide assumes you already have root access to the DB, if you don't have root access please get it.
+
+Give the user you created all privileges.
+
+    GRANT ALL PRIVLEGES ON `cmsc433-proj1`.* TO 'devdb'@'localhost';
+
+
 After doing that you *must* run the migrations.
 
 ### Migrations
