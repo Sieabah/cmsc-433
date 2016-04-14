@@ -2,6 +2,7 @@
 
 ## Contributers
 - Christopher Sidell
+- Michael Leung
 
 ## Requirements
 - A PHP 5 or higher installation.
