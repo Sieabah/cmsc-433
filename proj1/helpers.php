@@ -41,3 +41,7 @@ function session(){
 function view(){
     return (new View);
 }
+
+function redirect(){
+    return (new Redirect());
+}
