@@ -9,6 +9,15 @@ class Controller extends BaseClass
         $data['allClasses'] = app()->studentclass->getList($sesh);
         $data['available'] = app()->studentclass->availableClasses($sesh);
 
+        $data['taken'] = [];
+        foreach($sesh as $class){
+            if(!isset($data['allClasses'][$class])){
+                unset($sesh[$class]);
+                session()->put('taken', $sesh);
+            } else
+                $data['taken'][$class] = $data['allClasses'][$class];
+        }
+
         return view()->make('view', $data);
     }
 
@@ -23,7 +32,7 @@ class Controller extends BaseClass
             $parsedClasses[] = strtolower(trim($class));
         }
 
-        session()->put('taken', $parsedClasses);
+        session()->put('taken', array_merge(session()->get('taken', []),$parsedClasses));
 
         return redirect()->to('/')->exec();
     }
