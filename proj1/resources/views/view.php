@@ -16,6 +16,7 @@
                 </div>
                 <div class="col-xs-12">
                     <?php if(is_null(session()->get('name',null))): ?>
+                        <h3>To start can you enter your student information?</h3>
                         <form action="/student" method="POST">
                             <div class="col-xs-4">
                                 <label>Name</label>
