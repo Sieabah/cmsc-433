@@ -9,6 +9,15 @@
 - A MariaDB or MySQL installation.
 - Vagrant (Optional)
 
+## Required Linux Packages
+- mysql-server
+- curl
+- apache2
+- php5
+- php-pear
+- php5-mysql
+- php5-curl
+
 ## How to start
 Before anything you will need to setup the database and change the relevant information in config.php.
 
@@ -20,12 +29,55 @@ Before anything you will need to setup the database and change the relevant info
 it uses [VirtualBox](https://www.virtualbox.org/) so please have both of these installed for the easiest setup. To connect
 to the machine it will be at the IP of 192.168.33.10, you can either setup a host in your hosts file or not.
 
-### Setup Mysql user
-This guide assumes you already have root access to the DB, if you don't have root access please get it.
+For the simplest setup run *vagrant up* and wait for it to finish and visit 192.168.33.10. The site should be available.
 
-Give the user you created all privileges.
+Vagrant will setup synced folders for */config* and */proj1*.
 
-    GRANT ALL PRIVLEGES ON `cmsc433-proj1`.* TO 'devdb'@'localhost';
+### Setup Mysql
+
+If you want exacts as to how to setup the entire system we will start with MySQL. This guide assumes you
+already have root access to the DB, if you don't have root access please get it.
+
+After going through the install and setting up your root password run these few commands as root on mysql
+
+    CREATE USER 'devdb'@'localhost' IDENTIFIED BY 'devdb'
+    CREATE DATABASE devdb
+    GRANT ALL ON devdb.* TO 'devdb'@'localhost'
+
+Either change in config.php where db.dev is or add this to your */etc/hosts* file
+
+    127.0.0.1 db.dev
+
+### Setup Apache
+
+Setting up apache is rather easy. Firsly you need to enable the rewrite module as this project uses it
+
+    sudo a2enmod rewrite
+
+Then after that you can change the *000-default.conf* website or add your own and enable it. Google it. Here is the default
+configuration that is provided when you run vagrant up.
+
+    # APACHE VIRTUAL HOST CONFIGURATION
+
+    <VirtualHost _default_:80>
+            #ServerName www.example.com
+
+            ServerAdmin webmaster@localhost
+            DocumentRoot /srv/web/public
+
+            <Directory /srv/web/public>
+                    Require all granted
+                    AllowOverride all
+            </Directory>
+
+            ErrorLog ${APACHE_LOG_DIR}/error.log
+            CustomLog ${APACHE_LOG_DIR}/access.log combined
+    </VirtualHost>
+
+### Setup Files
+
+Simply put the files into a folder on the webserver. I will not go into setting up permissions, use my vagrant setup
+if you want to get up and running.
 
 ##### After doing that you *must* run the migrations.
 
@@ -48,6 +100,8 @@ To run migration and seeders
 For ease of use and simplicity you can modify the classes.json file in the resources
 folder and rerun the seeder to push all your changes to the DB. You can alternatively
 modify the classes directly from the database.
+
+To reflect the changes in the file you must reseed the database, there is no way around this.
 
 # Directory Structure
 
