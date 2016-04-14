@@ -1,4 +1,62 @@
 {
+  "biol": {
+    "141": {
+      "name": "Foundations of Biology: Cells, Energy and Organisms",
+      "req": ["math150,math151,math155"]
+    },
+    "142": {
+      "name": "Foundations of Biology: Ecology and Evolution",
+      "req": ["biol141","math150"]
+    }
+  },
+  "phys": {
+    "121": {
+      "name": "Introductory Physics I",
+      "req": ["math151"]
+    },
+    "122": {
+      "name": "Introductory Physics II",
+      "req": ["math152", "math121"]
+    },
+    "122l": {
+      "name": "Introductory Physics Laboratory",
+      "req": ["phys122"]
+    }
+  },
+  "ges": {
+    "110": {
+      "name": "Physical Geography"
+    },
+    "120": {
+      "name": "Environmental Science and Conservation"
+    },
+    "286": {
+      "name": "Exploring the Environment: A Geo-Spatial Perspective"
+    }
+  },
+  "sci": {
+    "100": {
+      "name": "Water; An Interdisciplinary Study"
+    },
+    "101l": {
+      "name": "Quantitative Reasoning: Measurement and Skills Lab",
+      "req": ["math106,math150"]
+    }
+  },
+  "chem": {
+    "101": {
+      "name": "Principles of Chemistry I",
+      "req": ["math106,math150,math151,math155"]
+    },
+    "102": {
+      "name": "Principles of Chemistry II",
+      "req": ["chem101"]
+    },
+    "102l": {
+      "name": "Introductory Chemistry Lab I",
+      "req": ["chem101"]
+    }
+  },
   "stat": {
     "355": {
       "name": "Introduction to Probability and Statistics for Scientists and Engineers",
