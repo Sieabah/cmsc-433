@@ -21,13 +21,28 @@
                     </ul>
                 </div>
                 <div class="col-xs-6">
-                    <h3>Classes you can take</h3>
-                    <ul>
-                        <?php foreach($available as $class): ?>
-
-                            <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
-                        <?php endforeach; ?>
-                    </ul>
+                    <div class="row">
+                        <h3>Classes you've taken</h3>
+                        <form action="/add" method="POST">
+                            <textarea class="form-control" name="classlist" rows="10"></textarea>
+                            <button class="btn btn-primary btn-lg pull-right" type="submit">Submit</button>
+                        </form>
+                        <?php if(isset($taken)): ?>
+                        <ul>
+                            <?php foreach($taken as $class): ?>
+                                <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                        <?php endif; ?>
+                    </div>
+                    <div class="row">
+                        <h3>Classes you can take</h3>
+                        <ul>
+                            <?php foreach($available as $class): ?>
+                                <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
