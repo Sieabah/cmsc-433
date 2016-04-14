@@ -15,7 +15,6 @@
                     <h3>All Available Classes</h3>
                     <ul>
                         <?php foreach($allClasses as $class): ?>
-
                             <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
                         <?php endforeach; ?>
                     </ul>
@@ -23,17 +22,17 @@
                 <div class="col-xs-6">
                     <div class="row">
                         <h3>Classes you've taken</h3>
+                        <?php if(isset($taken)): ?>
+                            <ul>
+                                <?php foreach($taken as $class): ?>
+                                    <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
                         <form action="/add" method="POST">
-                            <textarea class="form-control" name="classlist" rows="10"></textarea>
+                            <textarea required class="form-control" name="classlist" rows="10"></textarea>
                             <button class="btn btn-primary btn-lg pull-right" type="submit">Submit</button>
                         </form>
-                        <?php if(isset($taken)): ?>
-                        <ul>
-                            <?php foreach($taken as $class): ?>
-                                <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                        <?php endif; ?>
                     </div>
                     <div class="row">
                         <h3>Classes you can take</h3>
