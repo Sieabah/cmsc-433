@@ -69,8 +69,11 @@ class StudentClass extends DB
             //Determine if we can take the class
             $pass = 0;
             foreach($class->prereq as $req){
-                if(isset($takenList[$req->course]))
+                if(isset($takenList[$req->course])) {
+                    if($req->or == '1')
+                        $pass = count($class->prereq);
                     $pass++;
+                }
             }
 
             //If pass equals prereq count and it isn't already in list
