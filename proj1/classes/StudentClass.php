@@ -84,6 +84,10 @@ class StudentClass extends DB
         return $canTake;
     }
 
+    public function taken($course, $list){
+        return isset($list[strtolower($course)]);
+    }
+
     /**
      * get
      * NOT IMPLEMENTED

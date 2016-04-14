@@ -37,3 +37,7 @@ a:hover {
 a:active{
   text-decoration:underline;
 }
+
+.taken{
+  text-shadow: 0 0 1px rgb(60,200,60);
+}

@@ -36,6 +36,10 @@ class Controller extends BaseClass
                 $data['taken'][$class] = $data['allClasses'][$class];
         }
 
+        $data['hasTaken'] = function($course, $list){
+          return app()->studentclass->taken($course, $list);
+        };
+
         //Return view (view.php)
         return view()->make('view', $data);
     }

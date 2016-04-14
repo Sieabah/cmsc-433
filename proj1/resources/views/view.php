@@ -15,7 +15,7 @@
                     <h3>All Available Classes</h3>
                     <ul>
                         <?php foreach($allClasses as $class): ?>
-                            <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
+                            <li class="<?= $hasTaken($class->course, $taken) ? 'taken' : ''; ?>"><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -44,6 +44,44 @@
                                 <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
                             <?php endforeach; ?>
                         </ul>
+                        <div class="col-xs-12">
+                            <h4>Science Paths</h4>
+                            <p>
+                                <span class="<?= $hasTaken('CHEM101', $taken) ? 'taken' : ''; ?>">CHEM 101</span> ->
+                                <span class="<?= $hasTaken('CHEM102', $taken) ? 'taken' : ''; ?>">CHEM 102</span> ->
+                                <span class="<?= $hasTaken('CHEM102L', $taken) ? 'taken' : ''; ?>">CHEM 102L</span> ->
+                                <span class="<?= $hasTaken('GES110', $taken) ? 'taken' : ''; ?>">GES 110</span>
+                            </p>
+                            <p>
+                                <span class="<?= $hasTaken('CHEM101', $taken) ? 'taken' : ''; ?>">CHEM 101</span> ->
+                                <span class="<?= $hasTaken('CHEM102', $taken) ? 'taken' : ''; ?>">CHEM 102</span> ->
+                                <span class="<?= $hasTaken('BIOL141', $taken) ? 'taken' : ''; ?>">BIOL 141</span> ->
+                                <span>any Lab</span>
+                            </p>
+                            <p>
+                                <span class="<?= $hasTaken('BIOL141', $taken) ? 'taken' : ''; ?>">BIOL 141</span> ->
+                                <span class="<?= $hasTaken('BIOL142', $taken) ? 'taken' : ''; ?>">BIOL 142</span> ->
+                                <span>BIOL Lab</span> ->
+                                <span class="<?= $hasTaken('PHYS121', $taken) ? 'taken' : ''; ?>">PHYS 121</span>
+                            </p>
+                            <p>
+                                <span class="<?= $hasTaken('PHYS121', $taken) ? 'taken' : ''; ?>">PHYS 121</span> ->
+                                <span class="<?= $hasTaken('PHYS122', $taken) ? 'taken' : ''; ?>">PHYS 122</span> ->
+                                <span class="<?= $hasTaken('GES286', $taken) ? 'taken' : ''; ?>">GES 286</span>
+                            </p>
+                            <p>
+                                <span class="<?= $hasTaken('PHYS121', $taken) ? 'taken' : ''; ?>">PHYS 121</span> ->
+                                <span class="<?= $hasTaken('PHYS122', $taken) ? 'taken' : ''; ?>">PHYS 122</span> ->
+                                <span class="<?= $hasTaken('PHYS122L', $taken) ? 'taken' : ''; ?>">PHYS 122L</span> ->
+                                <span class="<?= $hasTaken('MATH251', $taken) ? 'taken' : ''; ?>">MATH 251</span>
+                            </p>
+                            <p>
+                                <span class="<?= $hasTaken('SCI100', $taken) ? 'taken' : ''; ?>">SCI 100</span> ->
+                                <span class="<?= $hasTaken('GES110', $taken) ? 'taken' : ''; ?>">GES 110</span> or
+                                <span class="<?= $hasTaken('GES120', $taken) ? 'taken' : ''; ?>">GES 120</span> ->
+                                <span class="<?= $hasTaken('SCI101L', $taken) ? 'taken' : ''; ?>">SCI 101L</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
