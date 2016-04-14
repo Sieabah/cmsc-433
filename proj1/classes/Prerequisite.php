@@ -18,7 +18,7 @@ class Prerequisite extends DB
      */
     public function get($course){
         return app()->db->query(
-            'SELECT classes.* '
+            'SELECT classes.*, prerequisites.or '
             .'FROM prerequisites '
             .'INNER JOIN classes '
             .'ON prerequisites.prereq_id = classes.id '
