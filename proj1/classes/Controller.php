@@ -71,4 +71,23 @@ class Controller extends BaseClass
         //Redirect back to the home route
         return redirect()->to('/')->exec();
     }
+
+    /**
+     * savestudent
+     * Save student personal data
+     * @route /student
+     * @author Christopher Sidell (csidell1@umbc.edu)
+     * @return Redirect
+     */
+    public function savestudent(){
+        if(empty(Input::input('name', null)) || empty(Input::input('id', null)) || empty(Input::input('email', null)))
+            return redirect()->back()->exec();
+
+        session()->put('name', Input::input('name',''));
+        session()->put('sid', Input::input('id',''));
+        session()->put('email', Input::input('email',''));
+
+        //Redirect back to the home route
+        return redirect()->to('/')->exec();
+    }
 }

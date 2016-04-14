@@ -11,6 +11,32 @@
     <body>
         <div class="container">
             <div class="row">
+                <div class="col-xs-12">
+                    <h1>Class Planning <small>CMSC433 Project 1 by Christopher Sidell & Michael Leung</small></h1>
+                </div>
+                <div class="col-xs-12">
+                    <?php if(is_null(session()->get('name',null))): ?>
+                        <form action="/student" method="POST">
+                            <div class="col-xs-4">
+                                <label>Name</label>
+                                <input required name="name" type="text" class="form-control"/>
+                            </div>
+                            <div class="col-xs-4">
+                                <label>Student ID</label>
+                                <input required name="id" type="text" class="form-control"/>
+                            </div>
+                            <div class="col-xs-4">
+                                <label>Email</label>
+                                <input required name="email" type="email" class="form-control"/>
+                            </div>
+                            <button class="btn btn-success pull-right" type="submit">Save</button>
+                        </form>
+                    <?php else: ?>
+                        <h5>Hi <?= session()->get('name'); ?>, let's start planning your classes.</h5>
+                        <h5><strong>Student ID:</strong> <?= session()->get('sid'); ?></h5>
+                        <h5><strong>Email:</strong> <?= session()->get('email'); ?></h5>
+                    <?php endif; ?>
+                </div>
                 <div class="col-xs-6">
                     <h3>All Available Classes</h3>
                     <h5><em>Classes you have taken will be <strong>highlighted</strong></em></h5>
