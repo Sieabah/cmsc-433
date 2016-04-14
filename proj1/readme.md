@@ -12,6 +12,14 @@
 ## How to start
 Before anything you will need to setup the database and change the relevant information in config.php.
 
+**This includes before running any vagrant commands**
+
+## Vagrant
+
+[Vagrant](https://www.vagrantup.com/) allows to share and deliver development environments easily. Underneath the hood
+it uses [VirtualBox](https://www.virtualbox.org/) so please have both of these installed for the easiest setup. To connect
+to the machine it will be at the IP of 192.168.33.10, you can either setup a host in your hosts file or not.
+
 ### Setup Mysql user
 This guide assumes you already have root access to the DB, if you don't have root access please get it.
 
