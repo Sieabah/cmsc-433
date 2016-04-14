@@ -14,3 +14,8 @@ If you would like to manually setup the website you can look at the other readme
 Christopher Sidell - Framework(Backend), Application(Frontend), Vagrant
 
 Michael Leung - Styling
+
+### Notes
+
+If you're curious where I got the ideas for the framework, resources, and information you can check out [Laravel](https://laravel.com/).
+All of the code here however is homebrew and not any part of the Laravel project.
