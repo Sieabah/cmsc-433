@@ -9,6 +9,10 @@
     "106": {
       "name": "Algebra and Elementary Functions"
     },
+    "115": {
+      "name": "Finite Mathematics",
+      "req": ["math106"]
+    },
     "140": {
       "name": "Differential Calculus",
       "req": ["math150"]
@@ -41,6 +45,10 @@
       "name": "Calculus of Trigonometric Functions",
       "req": ["math155"]
     },
+    "221": {
+      "name": "Introduction to Linear Algebra",
+      "req": ["math141,math151,math380"]
+    },
     "225": {
       "name": "Introduction to Differential Equations",
       "req": ["math142,math152"]
@@ -48,6 +56,10 @@
     "251": {
       "name": "Multivariable Calculus",
       "req": ["math142,math152"]
+    },
+    "380": {
+      "name": "Introduction to Operations Research",
+      "req": ["math115,math150"]
     }
   },
   "cmsc": {
@@ -186,7 +198,7 @@
     },
     "457": {
       "name": "Quantum Computation",
-      "req": ["cmsc203"]
+      "req": ["cmsc203", "math221"]
     },
     "461": {
       "name": "Database Management Systems",
