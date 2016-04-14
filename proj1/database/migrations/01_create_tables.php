@@ -1,7 +1,17 @@
 <?php
 
+/**
+ * Class create_tables
+ * Create the class table
+ * @author Christopher Sidell (csidell1@umbc.edu)
+ */
 class create_tables
 {
+    /**
+     * run
+     * This is called when migration is run
+     * @author Christopher Sidell (csidell1@umbc.edu)
+     */
     public function run()
     {
 		//Create the class list.

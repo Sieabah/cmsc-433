@@ -1,9 +1,21 @@
 <?php
 
+/**
+ * Class Prerequisite
+ *
+ * Describes the prerequisite model
+ * @author Christopher Sidell (csidell1@umbc.edu)
+ */
 class Prerequisite extends DB
 {
     protected $table = 'prerequisites';
 
+    /**
+     * Get the prequisites from the DB
+     * @param $course {string} Course name
+     * @author Christopher Sidell (csidell1@umbc.edu)
+     * @return {array}
+     */
     public function get($course){
         return app()->db->query(
             'SELECT classes.* '

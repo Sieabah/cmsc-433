@@ -1,3 +1,5 @@
 /**
- * Created by Christopher on 2/25/2016.
+ * Any client side scripting
+ * 
+ * @author Christopher Sidell (csidell1@umbc.edu)
  */

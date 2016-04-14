@@ -1,3 +1,7 @@
+#.htaccess
+
+# This file rewrites anything after the root slash to be passed as the variable to the index.php
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews

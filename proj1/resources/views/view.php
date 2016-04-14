@@ -28,7 +28,10 @@
                                     <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
                                 <?php endforeach; ?>
                             </ul>
+                        <?php else: ?>
+                            <p><strong>None!</strong></p>
                         <?php endif; ?>
+                        <p>Add more? Enter them below in a comma delimited list enter the full course name</p>
                         <form action="/add" method="POST">
                             <textarea required class="form-control" name="classlist" rows="10"></textarea>
                             <button class="btn btn-primary btn-lg pull-right" type="submit">Submit</button>
