@@ -1,0 +1,83 @@
+* 7605d66 christopher.sidell@gmail.com: Move ini_set before session_start
+* 541d67a christopher.sidell@gmail.com: Bump session expiration to a day
+* 38d2165 christopher.sidell@gmail.com: Add Notes
+* eb01b27 christopher.sidell@gmail.com: Add more documentation
+* f9deab3 christopher.sidell@gmail.com: Be more friendly
+* e866302 christopher.sidell@gmail.com: Vagrant from 0 to 100%
+* 84470f2 christopher.sidell@gmail.com: Add personal information gathering
+* 0f2f6e4 christopher.sidell@gmail.com: Update contributors
+* e1c14c4 christopher.sidell@gmail.com: Remove redundant data
+* fa431e3 christopher.sidell@gmail.com: Add vagrant documentation
+* ffe4a13 christopher.sidell@gmail.com: When selecting classes, add text highlighting
+* fb17a55 christopher.sidell@gmail.com: Add remaining science classes
+* df689a4 christopher.sidell@gmail.com: Add more classes to list
+* 5124c54 christopher.sidell@gmail.com: Add OR column
+* 87a3c2c christopher.sidell@gmail.com: Handle OR cases
+* 44197bd christopher.sidell@gmail.com: Add documentation
+* 97a44b1 christopher.sidell@gmail.com: Update vagrant file
+* 21a631e christopher.sidell@gmail.com: Remove unused files and move lab to own folder
+* 8fa727d christopher.sidell@gmail.com: Update view
+* 83de353 christopher.sidell@gmail.com: Correctly check against taken list and update to associative
+* 0bac68c christopher.sidell@gmail.com: Add class taking logic
+* ea473aa christopher.sidell@gmail.com: Update view with form
+* 67936cb christopher.sidell@gmail.com: Add addclass controller method
+* 0abe021 christopher.sidell@gmail.com: Add redirect helper
+* 3e9bcbf christopher.sidell@gmail.com: Add more session functionality
+* 950bff6 christopher.sidell@gmail.com: Update routing table
+* bdecb20 christopher.sidell@gmail.com: Add Redirect class
+* 4dbe24d christopher.sidell@gmail.com: Add Input class
+*   4d65735 christopher.sidell@gmail.com: Merged branch develop into master
+|\  
+| * 5ddd5cf christopher.sidell@gmail.com: Revert "Implementing view page."
+| * 3d92f78 me@debian: Updated style sheet.
+| * 3b0e9bd leumi1@umbc.edu: Implementing view page.
+| *   b0a0df9 leumi1@umbc.edu: Merge remote-tracking branch 'origin/master' into develop
+| |\  
+| * | 5d69153 leumi1@umbc.edu: Update contributor list.
+* | | 4109a96 christopher.sidell@gmail.com: Update Readme to include documentation about MySQL
+* | | c95a143 christopher.sidell@gmail.com: Update vagrant file with correct filepath
+* | | bdda2c4 christopher.sidell@gmail.com: Fix JSON
+* | | 8cb8ba4 christopher.sidell@gmail.com: Update migration file finding
+* | | dbe06f4 christopher.sidell@gmail.com: Update seeder file location
+* | | 9f6b1f6 christopher.sidell@gmail.com: Add site config
+| |/  
+|/|   
+* | 9743476 christopher.sidell@gmail.com: No requirements for specific course
+* | eb56c13 christopher.sidell@gmail.com: Add hacky implementation of any cmsc class requirement
+* | 67edfe6 christopher.sidell@gmail.com: Add formatting to class lists
+* | 0b712a5 christopher.sidell@gmail.com: Add remainder of classes
+* | cff30ce christopher.sidell@gmail.com: Remove extra semicolon
+* | 51292c1 christopher.sidell@gmail.com: Update project to include available classes
+* | f30ca65 christopher.sidell@gmail.com: Push data to view instead
+* | 42ba241 christopher.sidell@gmail.com: Extract logic to controller
+* | 8104fda christopher.sidell@gmail.com: Allow views to have top level variables
+* | c660009 christopher.sidell@gmail.com: Fix seeder again
+* | 4d5a431 christopher.sidell@gmail.com: Fix typo
+* | 99ae594 christopher.sidell@gmail.com: Fix seeder
+* | 74c8b29 christopher.sidell@gmail.com: Remove and fix migrations
+* | 605c8f5 christopher.sidell@gmail.com: Create view class
+* | 7ac7234 christopher.sidell@gmail.com: Add session and update class naming
+* | f8cb7bf christopher.sidell@gmail.com: Create session class
+* | 3b7c3ca christopher.sidell@gmail.com: Fix 404 routing
+* | c648cb8 christopher.sidell@gmail.com: Add router
+* | dbb6d78 christopher.sidell@gmail.com: Update relative links
+* | 8089b75 christopher.sidell@gmail.com: Put things where they belong
+* |   0d2f53d christopher.sidell@gmail.com: Merged branch develop into develop
+|\ \  
+| |/  
+| * 429a7bb leumi1@umbc.edu: Need extra tables for classes taken by student.
+| * 0733d58 leumi1@umbc.edu: Add outline of view code.
+* | 714fd11 christopher.sidell@gmail.com: Add vagrant config
+|/  
+* 5072c6b christopher.sidell@gmail.com: Add classes+prereqs to view
+* 6155c56 christopher.sidell@gmail.com: Shuffle around helpers and configuration locations
+* b62c93b christopher.sidell@gmail.com: Change config to use global function instead of variable
+* 183c965 christopher.sidell@gmail.com: Add more proj1 work
+* 80f163a christopher.sidell@gmail.com: Update project
+* 32a09af christopher.sidell@gmail.com: Update proj1 with more database build up
+* 17b8e5c christopher.sidell@gmail.com: Add previous work
+* 8339756 christopher.sidell@gmail.com: Show loaded app classes
+* f0e85d1 christopher.sidell@gmail.com: Add .gitignore
+* a4fae49 christopher.sidell@gmail.com: Remove intellij file
+* f4005c2 christopher.sidell@gmail.com: Add contributers
+* 86fa9af christopher.sidell@gmail.com: Init commit
