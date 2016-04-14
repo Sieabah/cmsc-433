@@ -9,7 +9,7 @@ app()->config = [
     //Database MySQL or MariaDB
     'db' => [
         'host' => 'db.dev',
-        'database' => 'cmsc433-proj1',
+        'database' => 'devdb',
         'username' => 'devdb',
         'password' => 'devdb'
     ],
