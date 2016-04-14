@@ -13,6 +13,7 @@
             <div class="row">
                 <div class="col-xs-6">
                     <h3>All Available Classes</h3>
+                    <h5><em>Classes you have taken will be <strong>highlighted</strong></em></h5>
                     <ul>
                         <?php foreach($allClasses as $class): ?>
                             <li class="<?= $hasTaken($class->course, $taken) ? 'taken' : ''; ?>"><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
@@ -22,16 +23,16 @@
                 <div class="col-xs-6">
                     <div class="row">
                         <h3>Classes you've taken</h3>
-                        <?php if(isset($taken)): ?>
+                        <?php if(isset($taken) && false): ?>
                             <ul>
                                 <?php foreach($taken as $class): ?>
                                     <li><strong><?= strtoupper($class->course); ?></strong> <?= $class->name; ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php else: ?>
-                            <p><strong>None!</strong></p>
+                            <!--<p><strong>None!</strong></p>-->
                         <?php endif; ?>
-                        <p>Add more? Enter them below in a comma delimited list enter the full course name</p>
+                        <p>Add more? Enter them below in a comma delimited list, enter the full course name</p>
                         <form action="/add" method="POST">
                             <textarea required class="form-control" name="classlist" rows="10"></textarea>
                             <button class="btn btn-primary btn-lg pull-right" type="submit">Submit</button>
