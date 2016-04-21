@@ -1,0 +1,28 @@
+
+<div id="test">
+</div>
+
+<script>
+function getVowelCount(str){
+	count = 0;
+	for(var i = 0; i < str.length; i++){
+		switch(str[i]){
+			case 'a':
+			case 'e':
+			case 'i':
+			case 'o':
+			case 'u':
+			case 'y':
+				count++;
+				break;
+			default:
+				break;
+		}
+	}
+
+	document.write(count);
+}
+
+var res = prompt('Enter a word');
+getVowelCount(res);
+</script>

@@ -1,0 +1,21 @@
+
+<div id="test">
+</div>
+
+<script>
+	function getScambledWord(str){
+
+		str = str.split("");
+		for(var i = 0; i < str.length; i++){
+			var swap = Math.floor(Math.random()*(i+1));
+			var tmp = str[i];
+			str[i] = str[swap];
+			str[swap] = tmp;
+		}
+
+		document.write(str.join(""));
+	}
+
+	var res = prompt('Enter a word');
+	getScambledWord(res);
+</script>

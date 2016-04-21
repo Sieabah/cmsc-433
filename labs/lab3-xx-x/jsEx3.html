@@ -1,0 +1,25 @@
+<div id="test">
+</div>
+
+<script>
+	function toDec(bin){
+		bin = bin.split("").reverse().join("");
+
+		var dec = 0;
+		var amt = 1;
+
+		console.log(bin);
+		for(var i = 0; i < bin.length; i++){
+			dec += parseInt(bin[i])*amt;
+			amt *= 2;
+		}
+
+		document.write(dec+"<br/>");
+	}
+
+	toDec("1");
+	toDec("10");
+	toDec("11");
+	toDec("10000");
+	toDec("10101");
+</script>

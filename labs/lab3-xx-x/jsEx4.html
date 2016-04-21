@@ -1,0 +1,32 @@
+<div id="test">
+</div>
+
+<script>
+	class Inst {
+		constructor(name, f,l, major, gpa){
+			this.data = {
+				inst: name,
+				fName:f,
+				lName:l,
+				Major:major,
+				GPA:gpa
+			};
+		}
+
+		toString(){
+			var str = "";
+			for(var key in this.data){
+				str += "<strong>"+key+"</strong>"+": "+this.data[key]+"<br/>";
+			}
+
+			return str;
+		}
+	}
+
+	var S00001 = new Inst("S00001","Mr.","Lupoli", "Computer Science", 3.79);
+	var S00002 = new Inst("S00002","Christopher","Sidell", "Computer Science", 2.5);
+
+	document.write(S00001+"<br/>");
+	document.write(S00002,"<br/>");
+
+</script>
