@@ -1,0 +1,8 @@
+<script>
+	var gcd = function(a, b) {
+		return !b ? a : gcd(b, a % b);
+	};
+
+	console.log(gcd(12,13));
+	console.log(gcd(9,3));
+</script>

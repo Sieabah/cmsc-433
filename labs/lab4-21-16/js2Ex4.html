@@ -1,0 +1,23 @@
+<body>
+<input id="field" />
+<button type="button" onclick="add()">Add</button>
+<button type="button" onclick="display()">Display</button>
+<div id="disp">
+</div>
+</body>
+<script>
+var arr = [];
+function add(){
+	var val = document.getElementById('field').value
+
+	arr.push(val);
+}
+
+function display(){
+	var str = "";
+	for(var key in arr){
+		str += "Element " + key + " = " + arr[key] + "<br />";
+	}
+	document.getElementById('disp').innerHTML = str;
+}
+</script>

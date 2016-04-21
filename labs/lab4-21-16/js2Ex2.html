@@ -1,0 +1,14 @@
+<script>
+function getLongestCountryName(list){
+	var longest = "";
+
+	for(var key in list){
+		if(list[key].length > longest.length)
+			longest = list[key];
+	}
+
+	return longest;
+}
+
+console.log(getLongestCountryName(["Australia","Germany", "United States of America"]))
+</script>
