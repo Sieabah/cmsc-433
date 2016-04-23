@@ -33,6 +33,13 @@ For the simplest setup run *vagrant up* and wait for it to finish and visit 192.
 
 Vagrant will setup synced folders for */config* and */proj1*.
 
+For vagrant to completely work the plugin for updating hosts must be installed by running
+
+    vagrant plugin install vagrant-hostsupdater
+
+Vagrant will have problems editing the hosts file if you do not have the correct permissions. Give your user account access
+to edit the hosts file for your operating system before running *vagrant up*.
+
 ### Setup Mysql
 
 If you want exacts as to how to setup the entire system we will start with MySQL. This guide assumes you

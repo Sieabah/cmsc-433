@@ -28,6 +28,8 @@ Vagrant.configure(2) do |config|
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.hostname = "cmsc433.dev"
+  config.hostsupdater.aliases = ["cmsc433.dev", "labs.cmsc433.dev"]
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -39,7 +41,8 @@ Vagrant.configure(2) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   config.vm.synced_folder "./labs/", "/srv/lab", create: true
-  config.vm.synced_folder "./proj1/", "/srv/web", create: true
+  #config.vm.synced_folder "./proj1/", "/srv/web", create: true
+  config.vm.synced_folder "./proj2/", "/srv/web", create: true
   config.vm.synced_folder "./config/", "/var/config_files", create: true
 
   config.vm.provision :shell, path: "bootstrap.sh"
