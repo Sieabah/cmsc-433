@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Change the content of a cell</title>
+    <style type="text/css">
+        body {margin: 30px;}
+    </style>
+</head><body>
+<table id="myTable" border="1">
+</table>
+<form>
+    <input type="button" onclick="createTable()" value="Create the table">
+</form>
+</body>
+</html>
+
+<script>
+    function createTable(){
+        document.getElementById('myTable').innerHTML = "";
+        var rows = prompt('Rows');
+        var cols = prompt('Columns');
+
+        var tbl = [];
+
+        for(var i = 0; i < cols; i++){
+            var col = "<tr>";
+            for(var j = 0; j < rows; j++){
+                col += "<td>"+i+","+j+"</td>";
+            }
+            col += "</tr>";
+            var cell = document.getElementById('myTable').insertRow();
+            cell.innerHTML = col;
+        }
+    }
+</script>
