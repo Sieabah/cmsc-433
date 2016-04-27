@@ -1,8 +1,3 @@
-<?php
-  require_once("dbconnect.php");
-  $validData = validatePost();
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,16 +6,16 @@
     <title>Computer Science Class List</title>
   </head>
   <body>
-   <div class="header"> <a href="http://umbc.edu"><img src="./img/umbclogo.png"></a></div>
+   <div class="header"> <a href="/"><img src="./img/umbclogo.png"></a></div>
     <div id="classtree">
-      <?php if(!$validData):?>          
+      <?php if(($errs = Validator::validatePost(new css_Input($_POST))) != null):?>
           <div class="error">
             <p class="heading">The following errors prevented the data from being processed:</p>
      
             <?php foreach($errs as $err): ?>
               <p class="bolderr"> <?php echo $err; ?> </p>
             <?php endforeach; ?>
-	     <a class="fancyLink return" href="classList.php">Use this link to return to the form</a>
+	     <a class="fancyLink return" href="/">Use this link to return to the form</a>
           </div>
       <?php else: insertRecords(); ?>  
         <p class="heading">Your information has been submitted!</p>

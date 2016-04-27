@@ -5,16 +5,12 @@
     <link rel="stylesheet" href="classList.css">
 
     <title>Computer Science Class List</title>
-	<script>
-		//this prevents users on the results page from going back, credit to https://www.irt.org/script/311.htm
-		window.history.forward(1);
-	</script>
 	<script type="text/javascript" src="./classDictionary.js"></script>
   </head>
   <body>
-   <div class="header"> <a href="http://umbc.edu"><img src="./img/umbclogo.png"></a></div>
+   <div class="header"> <a href="/"><img src="./img/umbclogo.png"></a></div>
 
-     <form action="formProcess.php" id="classlist" method="POST">
+     <form action="/formProcess" id="classlist" method="POST">
     
      <div id="userinfo">
       <label for="name">Name: </label>
