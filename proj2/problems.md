@@ -15,3 +15,5 @@ DUPLICATED DATA EVERYWHERE
 Actually use the database
 
 Invalid HTML
+
+Nearly impossible to add/remove classes with ease
