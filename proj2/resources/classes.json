@@ -161,7 +161,7 @@
       "name": "Software Design and Development",
       "req": ["cmsc341"]
     },
-    "351": {
+    "352": {
       "name": "Women, Gender, and Information Technology"
     },
     "391": {
@@ -181,6 +181,10 @@
     "426": {
       "name": "Principles of Computer Security",
       "req": ["cmsc341","cmsc313"]
+    },
+    "427": {
+      "name": "Principles of Computer Security",
+      "req": ["cmsc341"]
     },
     "431": {
       "name": "Compiler Design Principles",

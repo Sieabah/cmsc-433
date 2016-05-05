@@ -246,14 +246,19 @@ function labelOnMouseover(element) {
  */
 function updateDisplay() {
 	for(var key in classNodes){
-		if(classNodes[key].isAvailable() == false){
-			document.getElementById(key+"label").className = "hiddencourse";
-		}
-		else if(document.getElementById(key+"label").className == "coursetaken"){
-			document.getElementById(key+"label").className = "coursetaken";
-		}
-		else{
-			document.getElementById(key+"label").className = "course";
+		try {
+			if (classNodes[key].isAvailable() == false) {
+				document.getElementById(key + "label").className = "hiddencourse";
+			}
+			else if (document.getElementById(key + "label").className == "coursetaken") {
+				document.getElementById(key + "label").className = "coursetaken";
+			}
+			else {
+				document.getElementById(key + "label").className = "course";
+			}
+		} catch(e){
+			console.error(e);
+			console.error(key);
 		}
 	}
 }

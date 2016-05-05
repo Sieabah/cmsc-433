@@ -12,7 +12,7 @@ class App{
 
     public static function index(){
         $data = [];
-        $data['list'] = app()->studentclass->getList();
+        $data['catalog'] = app()->studentclass->getList();
         
         return $data;
     }

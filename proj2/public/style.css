@@ -1,0 +1,51 @@
+#userinfo{
+    color: rgba(255,255,255,0.87);
+    overflow: auto;
+    background: #000;
+    padding: 10px 0;
+    border-radius: 3px;
+}
+
+#classtree{
+    background-color: rgba(245,202,92,1);
+    border-radius: 5px;
+    margin:10px;
+    float:left;
+    box-shadow:5px 5px 5px grey;
+    padding: 10px;
+}
+
+.course{
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 4px 8px 4px;
+    background-color: #66AA44;
+    color: #FFFFFF;
+    margin: 5px;
+    border-radius: 5px;
+    border: 4px red;
+    box-shadow: 2px 2px 1px grey;
+}
+
+.coursetaken{
+    display: inline-block;
+    padding: 8px 4px 8px 4px;
+    background-color: red;
+    color: #FFFFFF;
+    margin: 5px;
+    border-radius: 5px;
+    border: 4px red;
+    box-shadow: 2px 2px 1px grey;
+}
+
+.course:hover{
+    background-color: #77CC66;
+}
+
+.hiddencourse{
+    display:none;
+}
+
+input[type=checkbox]{
+    display: none;
+}
