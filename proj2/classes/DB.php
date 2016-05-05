@@ -146,10 +146,16 @@ class DB
      * @author Christopher Sidell (csidell1@umbc.edu)
      * @return string
      */
-    public function create($arr){
+    public function create($table, $arr = null){
+        if(is_array($table))
+            $arr = $table;
+
+        if(!is_null($this->table))
+            $table = $this->table;
+
         $args = [];
 
-        $str = 'INSERT INTO `'.$this->table.'` ';
+        $str = 'INSERT INTO `'.$table.'` ';
 
         //Build the query
         $parameters = [];
