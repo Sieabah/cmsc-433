@@ -46,3 +46,7 @@ function config($name = null){
 function view(){
     return (new View);
 }
+
+function session(){
+    return (new Session);
+}
