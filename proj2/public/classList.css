@@ -178,7 +178,7 @@ input[type=checkbox]{
     background-color: black; 
 }
 #summary{
-    align: center:
+    align: center;
     border-collapse: collapse;
     width: 100%;
 }
