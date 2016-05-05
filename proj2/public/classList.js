@@ -227,14 +227,22 @@ function labelOnClick(element) {
  * Output: None
  */
 function labelOnMouseover(element) {
-	var course = element.id.substr(0,element.id.length-"label".length);
-	//show the title
-	document.getElementById("coursetitle").innerHTML=classes[course].title;
-	//show the credits the course is worth
-	document.getElementById("coursecredits").innerHTML=classes[course].credits;
-	//show the course description
-	document.getElementById("coursedescription").innerHTML=classes[course].description;
-
+	try {
+		var course = element.id.substr(0, element.id.length - "label".length);
+		//show the title
+		document.getElementById("coursetitle").innerHTML = classes[course].title;
+		//show the credits the course is worth
+		document.getElementById("coursecredits").innerHTML = classes[course].credits;
+		//show the course description
+		document.getElementById("coursedescription").innerHTML = classes[course].description;
+	} catch (e){
+		//show the title
+		document.getElementById("coursetitle").innerHTML = "N/a";
+		//show the credits the course is worth
+		document.getElementById("coursecredits").innerHTML = "N/a";
+		//show the course description
+		document.getElementById("coursedescription").innerHTML = "N/a";
+	}
 }
 
 

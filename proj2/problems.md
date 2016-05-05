@@ -18,5 +18,7 @@ Actually use the database
 
 Invalid HTML
 
+No error handling
+
 **Nearly impossible to add/remove classes with ease**
 - All classes changes must exist in all 4 locations in which class data exists to be sufficient.
