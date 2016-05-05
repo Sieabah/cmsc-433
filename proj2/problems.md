@@ -13,3 +13,5 @@ Fake use of the DB for classes
 DUPLICATED DATA EVERYWHERE
 
 Actually use the database
+
+Invalid HTML
