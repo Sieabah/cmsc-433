@@ -1,6 +1,3 @@
-<pre>
-<?= print_r($list); ?>
-</pre>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -149,7 +146,7 @@
 					</table>
 				</div>
 			</div>
-			<input type="submit" id="submitbutton" value="SUBMIT">
+
 		</form>
 		<script type="text/javascript"  src="./classList.js"></script>
 	</body>
