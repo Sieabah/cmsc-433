@@ -19,12 +19,15 @@
 			<div id="userinfo">
 				<label for="name">Name: </label>
 				<input type="text" name="name" id="name" required>
+
 				<label for="email">Best Email: </label>
 				<input type="email" name="email" id="email" required>
+
 				<label for="contactnum">Best Contact Number: </label>
 				<input type="text" name="contactnum" id="connectnum" required>
+
 				<label for="campusid">Best Campus ID: </label>
-				<input type="text" name="campusid" id="campusid" required>
+				<input type="text" name="campusid" id="campusid" required pattern="[a-zA-Z][a-zA-Z]\d{5}">
 			</div>
 
 			<h1>Computer Science Undergraduate Course Advising</h1>
@@ -146,7 +149,7 @@
 					</table>
 				</div>
 			</div>
-
+			<input type="submit" id="submitbutton" value="SUBMIT">
 		</form>
 		<script type="text/javascript"  src="./classList.js"></script>
 	</body>
