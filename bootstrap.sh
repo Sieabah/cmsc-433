@@ -24,6 +24,11 @@ sudo service apache2 restart
 sudo service mysql restart
 
 #pushd;
-#cd /srv/web
+#cd /srv/proj1
 #php migration.php seed
 #popd;
+
+pushd;
+cd /srv/proj2
+php database/populate.php
+popd;
