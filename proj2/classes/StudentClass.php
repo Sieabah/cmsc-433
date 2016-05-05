@@ -87,18 +87,6 @@ class StudentClass extends DB
     public function taken($course, $list){
         return isset($list[strtolower($course)]);
     }
-
-    /**
-     * get
-     * NOT IMPLEMENTED
-     * @author Christopher Sidell (csidell1@umbc.edu)
-     * @param $course
-     */
-    public function get($course){
-        global $app;
-
-        //return $app->DB->query('SELECT * FROM ')
-    }
 }
 
 app()->studentclass = (new StudentClass);
