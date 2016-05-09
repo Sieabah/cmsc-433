@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf8">
-    <link rel="stylesheet" href="classList.css">
+    <link rel="stylesheet" href="../../public/classList.css">
     <title>Computer Science Class List</title>
   </head>
   <body>

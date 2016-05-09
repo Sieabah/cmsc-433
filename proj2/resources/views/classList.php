@@ -37,10 +37,10 @@
 						</div>
 						<div class="col-xs-12 col-sm-6">
 							<label for="contactnum">Best Contact Number: </label>
-							<input class="form-control" type="text" name="contactnum" id="connectnum" required>
+							<input class="form-control" type="text" name="contactnum" id="connectnum" required pattern="\d{10}" title="Enter as 10 digit phone number.  No special characters">
 
 							<label for="campusid">Best Campus ID: </label>
-							<input class="form-control" type="text" name="campusid" id="campusid" required pattern="[a-zA-Z][a-zA-Z]\d{5}">
+							<input class="form-control" type="text" name="campusid" id="campusid" required pattern="[a-zA-Z][a-zA-Z]\d{5}" title="Enter as format EX: AA12345">
 						</div>
 					</div>
 
