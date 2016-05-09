@@ -25,6 +25,7 @@ app()->db->raw("CREATE TABLE `classes` (`id` INT UNSIGNED NOT NULL AUTO_INCREMEN
     ."`course` CHAR(50) NULL DEFAULT NULL, "
     ."`number` SMALLINT NULL DEFAULT NULL, "
     ."`department` CHAR(50) NULL DEFAULT NULL, "
+    ."`credits` SMALLINT NULL DEFAULT NULL, "
     ."PRIMARY KEY (`id`));");
 
 //Create a table with the following parameters
@@ -52,7 +53,8 @@ foreach($classes as $name => $department) {
             'name' => $class->name,
             'course' => $name . $number,
             'number' => $number,
-            'department' => $name
+            'department' => $name,
+             
         ]);
     }
 }

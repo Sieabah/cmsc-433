@@ -11,8 +11,10 @@
   function getSummary(){
     $courses = $_POST["course"];
     $db = new DB();
-    $val = $db->query("SELECT * FROM classes")->fetch(PDO::FETCH_OBJ);
-    print_r($val);
+    $courseData = $db->query("SELECT * FROM classes")->fetchAll(PDO::FETCH_OBJ);
+    foreach($courseData as $val){
+      echo($val->course . "<br />");
+    }
     
     foreach($courses as $val){
       echo($val . "<br />");
