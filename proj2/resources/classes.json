@@ -6,7 +6,7 @@
     },
     "142": {
       "name": "Foundations of Biology: Ecology and Evolution",
-      "req": ["biol141","math150"]
+      "req": ["biol141,math150"]
     }
   },
   "phys": {
@@ -16,9 +16,9 @@
     },
     "122": {
       "name": "Introductory Physics II",
-      "req": ["math152", "phys121"]
+      "req": ["math152,phys121"]
     },
-    "122l": {
+    "122L": {
       "name": "Introductory Physics Laboratory",
       "req": ["phys122"]
     }
