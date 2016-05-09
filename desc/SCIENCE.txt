@@ -1,0 +1,346 @@
+﻿BIOL 100
+Concepts of Biology
+(4.00)
+A broad overview of contemporary biological science. Major areas include the biochemistry of energy
+transformation, cell structure and function, Mendelian, molecular and population genetics,
+development and differentiation, plant and animal physiology, evolution, and ecology.
+^
+BIOL 301
+Ecology and Evolution
+(3.00)
+An introduction to the processes of evolution, the outcomes of evolution, and the field of ecology.
+Processes of evolution include understanding natural selection, genetic drift, molecular evolution
+and general evolution theory. Outcomes of evolution includes speciation hybridization, building
+phylogenetic trees, and using trees to understand the diversity of life, especially vertebrate
+evolution. Ecology topics include population growth and regulation, competition, predator/prey
+interactions, symbiosis, community structure and food webs, and energy flow and nutrient cylcing
+within ecosystems.
+^
+BIOL 141
+Foundations of Biology: Cells, Energy and Organisms
+(4.00)
+This course for majors provides a broad overview of contemporary biological concepts. Major topics
+include structure and synthesis of nucleic acids and proteins, molecular genetics, prokaryotic and
+eukaryotic cell structure and function, biochemistry of energy transformation, and animal and plant
+development and physiology.
+^
+BIOL 142
+Foundations of Biology: Ecology and Evolution
+(4.00)
+This course provides a broad overview of contemporary biological concepts. Major topics include
+fundamental concepts in ecology and evolution and emphasizes the fundamental interrelationship
+between these two fields of study. Concepts in evolution include a general description of the
+diversity of life, a review of Mendelian genetics, the causes and consequences of speciation,
+natural selection and genetic drift. Concepts in ecology will focus on ecological and evolutionary
+factors that govern population growth and regulation, species distributions, community and
+ecosystem ecology.
+^
+CHEM 101
+Principles of Chemistry I
+(4.00)
+An introduction to chemistry for science majors and other students who require a thorough grounding
+in the principles of chemistry. Topics treated include the atomic-molecular theory of matter,
+stoichiometry, states of matter, chemical nomenclature, energetics of chemical and physical
+processes, solutions, periodic properties, VSEPR, molecular orbital theory and chemistry of
+familiar elements
+^
+CHEM 102
+Principles of Chemistry II
+(4.00)
+Principles of chemical and physical equilibrium, liquids and solids, elementary thermodynamics,
+electron and proton transfer reactions, electrochemistry, chemical kinetics and a further study of
+the periodic properties of the elements.
+^
+PHYS 121
+Introductory Physics I
+(4.00)
+This course emphasizes classical mechanics. Topics include force, particle kinematics and dynamics,
+equilibrium, Newton’s laws of motion and gravitation, rotational motion, collisions, momentum,
+energy and conservation laws.
+^
+PHYS 121
+Introductory Physics I
+(4.00)
+This course emphasizes classical mechanics. Topics include force, particle kinematics and dynamics,
+equilibrium, Newton’s laws of motion and gravitation, rotational motion, collisions, momentum,
+energy and conservation laws.
+^
+BIOL 100L
+Concepts of Experimental Biology
+(2.00)
+The laboratory exercises are designed to provide the student experience with essential laboratory
+equipment and techniques.
+^
+BIOL 251
+Human Anatomy and Physiology I
+(3.00)
+The first semester of a two-semester lecture course covering the structure and function of the
+organs of the human body. An integrated approach permits concurrent presentation of the anatomy and
+physiology of each organ system.
+^
+BIOL 251L
+Human Anatomy and Physiology I Laboratory
+(1.00)
+Laboratory course to accompany BIOL 251 . The laboratory includes dissections, work with skeletons,
+models of body parts and experimental studies of physiological processes. Required for most allied
+health programs.  Recommended Preparation: Permission only. A form is available inthe Biological
+Sciences office.
+^
+BIOL 252
+Human Anatomy and Physiology II
+(3.00)
+Continuation of BIOL 251. When Offered: (Spring)
+^
+BIOL 252L
+Human Anatomy and Physiology II Laboratory.
+(1.00)
+Continuation of BIOL 251L  Recommended Preparation: Permission only. A form is available in the
+Biological Sciences office.
+^
+BIOL 275
+Microbiology
+(3.00)
+Introductory course describing the fundamental properties of micro-organisms and viruses and their
+relationships to other life forms. Topics include the structure and function of bacteria, mode of
+action of antibiotics, genetics of bacteria and the role of bacteria in disease. The structure,
+replication and pathology of viruses are discussed, including the response of hosts to viral
+infection and the fundamental concepts of the immune response.
+^
+BIOL 275L
+Microbiology Laboratory
+(2.00)
+This laboratory course consists of a series of exercises designed to familiarize the student with
+microbiological techniques. Experiments are performed in basic bacteriology, applied bacteriology,
+virology and immunology. Students will be expected to work independently, spending brief periods of
+time other than the scheduled lab period collecting data.
+^
+BIOL 301
+Ecology and Evolution
+(3.00)
+An introduction to the processes of evolution, the outcomes of evolution, and the field of ecology.
+Processes of evolution include understanding natural selection, genetic drift, molecular evolution
+and general evolution theory. Outcomes of evolution includes speciation hybridization, building
+phylogenetic trees, and using trees to understand the diversity of life, especially vertebrate
+evolution. Ecology topics include population growth and regulation, competition, predator/prey
+interactions, symbiosis, community structure and food webs, and energy flow and nutrient cylcing
+within ecosystems.
+^
+BIOL 302L
+Molecular and General Genetics Laboratory
+(2.00)
+A laboratory course designed to illustrate fundamental genetic principles by experimentation. Such
+principles include the nature of genetic material, transfer of genetic information in prokaryotic
+and eukaryotic systems, organization and regulation of gene expression, Mendel’s rules of
+heredity, linkage and crossing over, and genetic variation. Students will be expected to work
+independently, spending periods of time outside the scheduled lab period collecting data.
+^
+BIOL 303
+Cell Biology
+(4.00)
+A modern treatment of cell structure and function, with emphasis on the molecular architecture,
+biochemistry and regulatory mechanisms common to all cells. Topics include membrane structure,
+function and transport; molecular mechanisms of energy metabolism and its associated organelles;
+the structural and molecular basis for the expression of genetic information; the organelles
+involved in the regulation of cell shape and motility; and selected cell functions, growth,
+reproduction and their control. This course is designed for students interested in the biological
+sciences, biochemistry and the allied health professions.
+^
+BIOL 303L
+Cell Biology Laboratory
+(2.00)
+You must complete BIOL 302 and BIOL 300L with a grade of ‘C’ or better. Pre/Corequisite: BIOL
+303 with a C or better.This laboratory course is designed to introduce students to the principles
+of experimental design and the analysis and interpretation of data in modern cell biology.   During
+the course of the semester students will be using the techniques of white light and fluorescence
+microscopy, electrophoresis, protein purification, and tissue culture and other cell based assays.
+These techniques will allow students to better understand the mechanisms of cell adhesion, the
+cytoskeleton, exocytosis and other cell biological processes.
+^
+BIOL 304L
+Plant Biology Laboratory
+(2.00)
+A course of laboratory experiments designed to enhance student abilities in experimental design,
+hypothesis testing, and analysis and interpretation of data using plant systems. Students are
+required to present and interpret experimental results in oral and written form. An introduction to
+reading and understanding of primary scientific literature is presented. Experiments include
+photosynthesis, water relations, growth regulator effects and hostpathogen interactions.
+^
+BIOL 305
+Comparative Animal Physiology
+(3.00)
+Functional features of whole organisms and their component organs and organ systems will be
+studied. Emphasis will be on ways in which diverse organisms at various phylogenetic levels perform
+similar functions. Examples of topics include osmoregulation, gas exchange, control systems,
+sensors, effectors, brain and behavior.
+^
+BIOL 305L
+Physiology Laboratory
+(2.00)
+A physiology laboratory in which we experimentally investigate both human and animal physiology,
+especially nervous, muscular, cardiovascular, and respiratory function.
+^
+CHEM 102L
+Introductory Chemistry Lab I
+(2.00)
+Companion course to CHEM 102, intended for all students who require two or more years of chemistry.
+When Offered: (Fall/Spring/Summer)
+^
+GES 110
+Physical Geography
+(3.00)
+Study of the principles and processes of climate, earth materials, landforms, soils and vegetation
+that give logic to their integrated patterns of world distribution.
+^
+GES 111
+Principles of Geology
+(3.00)
+An introduction to the structure, composition, historical evolution and surface features of the
+earth. Topics include the geologic time scale and radiometric dating; major groups of rocks and
+minerals; sedimentation and stratigraphy; plate tectonics, seismicity, volcanism, mountain-building
+and geologic structures; weathering and soil formation; and sculpture of the land by surficial
+processes.
+^
+GES 120
+Environmental Science and Conservation
+(3.00)
+An introduction to the interdisciplinary study of how the earth and the earth’s ecosystems work,
+how they are interconnected, and how humans utilize and impact natural resource systems.
+Environmental problems and solutions are examined and natural resource conservation strategies and
+policies are reviewed. Topics covered in the course include ecosystem processes, climate and
+climate change, biodiversity and endangered species, land degradation and deforestation, human
+population growth, agriculture, and water and soil resources.
+^
+PHYS 122L
+Introductory Physics Laboratory
+(3.00)
+This lab course is based on the physical phenomena associated with the PHYS 121-122 lecture-course
+sequence. The laboratory includes planning a measurement, setting up and working with equipment,
+and recording data. Students will learn to analyze data, compare theory with experiment, and
+estimate and report errors. Students will learn to present results in a complete, concise, and
+clearly written report.
+^
+PHYS 224
+Vibrations and Waves
+(3.00)
+This course emphasizes vibrations, wave motion and optics. Topics include mathematical
+characterization of vibrations and waves, sound, superposition of standing waves, geometrical and
+physical optics, diffraction, interference and polarization of light.
+^
+PHYS 304
+Fundamentals of Astronomy and Astrophysics
+(3.00)
+This course presents a calculus-based introduction to key concepts in the science of astronomy and
+astrophysics. The course is designed for physics majors and other science majors with strong
+interest in astronomy, physics and mathematics. The course details some of the primary physical
+concepts relevant to astronomy and astrophysics and also lays the foundation for more advanced
+coursework in astrophysics.
+^
+BIOL 106
+The Human Organism
+(3.00)
+This course is designed to introduce the non-science student to science and its methods and provide
+a basic understanding of some body functions and dysfunctions. Topics include genes and DNA, cells
+and cancer, immune system and HIV, metabolism and nutrition, muscles and exercise, nervous system
+and drugs, etc.
+^
+BIOL 108
+Biology of Heart Disease
+(3.00)
+This course will develop, from a biological perspective, the nature of heart disease and the
+complex connections between environmental factors and this life-threatening illness. We
+specifically will consider the current, often conflicting, evidence that links dietary factors with
+the onset of the disease.
+^
+BIOL 123
+Human Genetics
+(3.00)
+A course designed for non–biology majors. Topics will include the fundamental rules of heredity,
+gene structure and function, human genetic diseases and genetic engineering. Particular emphasis
+will be placed on the application of the new genetic technology to the human condition.
+^
+CHEM 100
+The Chemical World
+(3.00)
+A topical discussion of the science of chemistry and its relationship to our everyday lives. While
+no previous knowledge of chemistry is required, this course does involve the use of chemical
+formulas and such basic math as algebra and scientific notation. When Offered: (Spring)
+^
+CHEM 124
+Introduction to General Organic and Biochemistry II
+(3.00)
+Continuation of CHEM 123. When Offered: (Spring/Summer)
+^
+PHYS 100
+Ideas in Physics
+(3.00)
+A one-semester, general-interest course for the non-science major, introducing concepts of
+classical physics such as mechanics, electromagnetism, thermo-dynamics and optics, along with how a
+physicist views the world.
+^
+PHYS 105
+Ideas in Astronomy
+(3.00)
+A general-interest course that covers observations, models and theories of the solar system, the
+stars and the galaxies. Students also will become acquainted with the history of astronomy.
+Recommended Preparation: Mathematical ability at the level of high school algebra, geometry and
+trigonometry.
+^
+PHYS 112
+Basic Physics II
+(4.00)
+Continuation of PHYS 111. Topics include electricity, magnetism, optics and modern physics.
+^
+BIOL 107
+Biology of Cancer
+(3.00)
+A major killer disease in Western countries will be examined from the biological perspective. This
+course will evaluate current epidemiologic, clinical and experimental research and assess the
+relative importance of environmental and genetic factors as they relate to the causes and
+prevention of this disease. Particular emphasis will be given to unraveling the links between
+dietary and nutritional factors and this “disease of affluence”. Recommended Preparation: Some
+background in the natural sciences, preferably one year in both high school biology and chemistry
+^
+BIOL 109
+Life: Introduction to Modern Biology
+(3.00)
+This is a lab-driven course designed to fulfill the university graduation requirement of a science
+lab. Topics covered will include basic biological concepts such as the nature of DNA, heredity,
+human genetics and the process of mutation, as well as modern issues such as forensic analysis of
+DNA and blood, the biology behind cancer and genetic diseases, and others as determined by current
+events and interest. The course includes a 75-minute lecture and 120-minute lab.
+^
+BIOL 123L
+Basics Genetic Laboratory
+(1.00)
+Basics Genetic Laboratory
+^
+CHEM 123
+Introduction to General Organic and Biochemistry I
+(4.00)
+A two-semester chemistry course intended for students preparing for health sciences. Topics include
+atomicmolecular theory, properties of the elements, bonding and molecular structure, solutions,
+elementary organic chemistry, proteins, lipids, carbohydrates and nucleic acids. When Offered:
+(Fall/Summer) Recommended Preparation: A working knowledge of elementary algebra is required
+^
+CHEM 124L
+General Organic and Biochemistry Lab
+(2.00)
+A companion laboratory course to CHEM 124. This course, together with CHEM 123 and CHEM 124, will
+complete the chemistry requirement for nurses, dental hygienists, physical therapists and others in
+health-related sciences, with the exception of premed and predental students. When Offered:
+(Spring/Summer)
+^
+PHYS 101
+Ideas in Modern Physics
+(3.00)
+A one-semester, general interest course for the non-science major, introducing concepts of modern
+physics such as relativity, quantum mechanics, and atomic and nuclear physics.
+^
+PHYS 111
+Basic Physics I
+(4.00)
+Three lectures and one two-hour laboratory period a week. A general physics course intended
+primarily for students in psychology, biology and health related sciences. Topics include
+mechanics, heat and sound. Recommended Preparation: High school mathematics, including trigonometry
+or MATH 150. Notes: This course satisfies the minimum requirements of medical and dental schools.
+^

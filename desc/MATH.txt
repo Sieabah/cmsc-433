@@ -1,0 +1,109 @@
+﻿MATH 151
+Calculus and Analytic Geometry I
+(4.00)
+Topics of this course include limits, continuity, the rate of change, derivatives, differentiation
+formulas for algebraic, trigonometric, logarithmic, and exponential functions, maxima and minima,
+integration and computation of areas, the Fundamental Theorem of Calculus, areas and volumes of
+solids of revolution, and applications. Note: Non-science oriented students should consider MATH
+155 . Credit will not be given for both MATH 151  and MATH 155 .  Note: Non-science oriented
+students should consider MATH 155 . Credit will not be given for both Math 151 and MATH 155.
+^
+MATH 152
+Calculus and Analytic Geometry II
+(4.00)
+Topics of this course include inverse functions, methods of integration, improper integrals,
+hyperbolic functions, sequences and infinite series, power series, Taylor series, conic sections,
+polar coordinates, and applications.
+^
+MATH 221
+Introduction to Linear Algebra
+(3.00)
+Topics of this course include: linear equations, Gauss-Jordan reduction, matrices and determinants
+and their properties, vector spaces and subspaces, basis and dimension, linear transformations,
+kernel and range, eigenvalues and eigenvectors, and matrix diagonalization.
+^
+MATH 225
+Introduction to Differential Equations
+(3.00)
+Topics of this course include: solutions of first- and second order linear differential equations,
+non-linear exact and separable equations, integrating factors, homogeneous equations, higher-order
+linear equations, initial and boundary value problems, solutions as functions of the equation
+parameters, Laplace transforms, power series solutions for Bessel and Legendre equations,
+difference equations and numerical methods. Recommended Preparation: MATH 251.
+^
+MATH 251
+Multivariable Calculus
+(4.00)
+Topics of this course include parametric and polar functions, vectors, lines, planes and surfaces
+in three dimensions, vector functions and their derivatives, partial derivatives,gradients,
+directional derivatives, maxima, minima, and Lagrange multipliers, multiple integrals, area,
+volume, surface area, integration in different coordinate systems, line integral, and the
+Green’s, Stokes, and divergence theorems.
+^
+MATH 301
+Introduction to Mathematical Analysis I
+(4.00)
+This course is a systematic study of basic analysis with an emphasis on formal proofs, examples and
+counter examples. Topics include properties of the real line, sequences, series, limits, continuity
+and differentiation of functions, and Riemann Integration. Note: Highly recommended is CMSC 203.
+^
+MATH 430
+Matrix Analysis
+(3.00)
+Topics in this course will include a review of basic matrix operations, determinants, rank, matrix
+inverse and solving linear equations. The course then will study partitioned matrices, eigenvalues
+and eigenvectors, spectral decomposition, singular-value decomposition, orthogonal projections,
+idempotent matrices, quadratic forms, extrema of quadratic forms, non-negative definite and
+positive definite matrices, and matrix derivatives.
+^
+MATH 441
+Introduction to Numerical Analysis
+(3.00)
+Topics of this course include: numerical linear algebra, interpolation, numerical differentiation
+and integration, solution of nonlinear equations, acceleration of convergence and numerical
+treatment of differential equations.
+^
+MATH 452
+Introduction to Stochastic Processes
+(3.00)
+This is a non-measure theoretic course. Topics include general Markov chains (branching process,
+queuing processes, birth and death processes, and Poisson processes), second-order processes
+(Gaussian processes and Wiener processes) and an introduction to stochastic differential equations.
+^
+MATH 475
+Combinatorics and Graph Theory
+(3.00)
+General enumeration methods, difference equations, generating functions. Elements of graph theory,
+including transport networks, matching theory and graph algorithms. Introduction to finite
+geometries and block designs.
+^
+MATH 481
+Mathematical Modeling
+(3.00)
+Derivation and analysis of mathematical models of phenomena from physics, engineering and other
+exact sciences. Topics include stability of equilibria of dynamical systems with emphasis on the
+qualitative aspects of solutions, phase plane analysis and linearization of non-linear systems.
+Additional topics from catastrophe theory, bifurcation, optimization and chaos will be covered as
+time permits. Examples will be drawn from population dynamics, flywheel governor, a model for
+heartbeat, bang-bang controls, self-sustained oscillations and morphogenesis.
+^
+MATH 483
+Linear and Combinatorial Optimization
+(3.00)
+Integer programming. The traveling salesman problem. Advanced linear programming techniques.
+Complexity. Projective methods in linear programming.The Karmarkar method.
+^
+STAT 355
+Introduction to Probability and Statistics for Scientists and Engineers
+(4.00)
+An introduction to applied statistics designed for science majors and others with demonstrated
+quantitative ability. Topics include nature of statistical methods, random variables and their
+distribution functions, general principles of estimation and hypothesis testing. A laboratory
+introduces students to computer techniques in statistical analysis.
+^
+STAT 451
+Introduction to Probability Theory
+(3.00)
+Topics include probability spaces and probability calculus, random variables and their distribution
+functions, the calculus of expectations, characteristic functions and large sample theory.
+^
