@@ -2,7 +2,7 @@
 
 ## Contributers
 - Christopher Sidell
--
+- Joshua Standiford
 
 ## Requirements
 - A PHP 5.6 or higher installation.

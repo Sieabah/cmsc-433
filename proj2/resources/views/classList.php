@@ -95,6 +95,17 @@
 						<div id="sciences">
 							<div id="path1">
 							<!-- chem101 -> chem102 -> chem102L -> GES110 -->
+							<?php
+								$courses = ['math' => ['150', '151', '152', '221', '225', '251'], 'stat' => ['355']];
+
+								foreach($courses as $dept => $list): foreach($list as $class): ?>
+
+									<label class='course' id="<?= $dept.$class; ?>label" for="<?= $dept.$class; ?>" onclick='labelOnClick(this)' onmouseover='labelOnMouseover(this)' >
+										<?= strtoupper($dept); ?> <?= $class; ?>
+									</label>
+									<input type='checkbox' class='' name='course[]' id="<?= $dept.$class; ?>" value="<?= $dept.$class; ?>">
+
+								<?php endforeach; endforeach; ?>
 							</div>
 							<div id="path2">
 							<!-- chem101 -> chem102 -> biol141 -> any lab -->
