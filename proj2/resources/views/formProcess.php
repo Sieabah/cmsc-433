@@ -10,12 +10,24 @@
 
   function getSummary(){
     $courses = $_POST["course"];
-    $creditArr;
+    $creditArr = array();
+    $temp2;
     $db = new DB();
     $courseData = $db->query("SELECT course, credits FROM classes")->fetchAll(PDO::FETCH_OBJ);
     foreach($courseData as $val){
-      $creditArr[$val->course] = $val->credits;
+      $temp2["$val->course"] = $val->credits;
     }
+
+
+
+    foreach($courses as $class){
+      $temp["credits"] = $temp2[$class];  
+      $temp["name"] = $class;
+      array_push($creditArr, $temp);
+    }
+
+     
+
     return $creditArr;
   }
 
@@ -52,6 +64,7 @@
           </tr>
 
           <?php
+          $totalCredits = 0;
           $summary = getSummary();
           foreach($summary as $course):
             $totalCredits += $course["credits"];
