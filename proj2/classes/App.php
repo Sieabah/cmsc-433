@@ -17,14 +17,24 @@ class App{
         return $data;
     }
 
+    public static function process(){
+
+    }
+
+    public static function route($uri){
+        switch($uri){
+            case '/':
+                return self::index();
+            case 'formProcess':
+                return self::process();
+            default:
+                return [];
+        }
+    }
+
     public static function run(){
         if(isset(app()->routes[$_SERVER['REQUEST_URI']])){
-            $data = [];
-            switch($_SERVER['REQUEST_URI']){
-                case '/':
-                    $data = self::index();
-            }
-            return view()->make(app()->routes[$_SERVER['REQUEST_URI']], $data);
+            return view()->make(app()->routes[$_SERVER['REQUEST_URI']], self::route($_SERVER['REQUEST_URI']));
         }
         else
             return view()->make($_SERVER['REQUEST_URI']);
