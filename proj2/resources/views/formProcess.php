@@ -13,7 +13,7 @@
     $db = new DB();
     $courseData = $db->query("SELECT * FROM classes")->fetchAll(PDO::FETCH_OBJ);
     foreach($courseData as $val){
-      echo($val->course . "<br />");
+      echo($val->credits . "<br />");
     }
     
     foreach($courses as $val){

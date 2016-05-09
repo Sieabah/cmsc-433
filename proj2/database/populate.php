@@ -25,7 +25,7 @@ app()->db->raw("CREATE TABLE `classes` (`id` INT UNSIGNED NOT NULL AUTO_INCREMEN
     ."`course` CHAR(50) NULL DEFAULT NULL, "
     ."`number` SMALLINT NULL DEFAULT NULL, "
     ."`department` CHAR(50) NULL DEFAULT NULL, "
-    ."`credits` SMALLINT NULL DEFAULT NULL, "
+    ."`credits` SMALLINT NULL DEFAULT 0, "
     ."PRIMARY KEY (`id`));");
 
 //Create a table with the following parameters
@@ -45,7 +45,6 @@ $catalog = [];
 foreach($classes as $name => $department) {
     //Add it to the catalog
     $catalog[$name] = [];
-
     //Fill out the data
     foreach ($department as $number => $class) {
         //Create the catalog and push classes to the DB
@@ -54,7 +53,7 @@ foreach($classes as $name => $department) {
             'course' => $name . $number,
             'number' => $number,
             'department' => $name,
-             
+            'credits' => $class->credits,
         ]);
     }
 }

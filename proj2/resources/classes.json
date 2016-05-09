@@ -3,419 +3,421 @@
     "141": {
       "name": "Foundations of Biology: Cells, Energy and Organisms",
       "req": ["math150,math151"],
-      "credits": ["4"]
+      "credits": "4"
     },
     "142": {
       "name": "Foundations of Biology: Ecology and Evolution",
       "req": ["biol141,math150"],
-      "credits": ["4"]
+      "credits": "4"
     }
   },
   "phys": {
     "121": {
       "name": "Introductory Physics I",
       "req": ["math151"],
-      "credits": ["4"]
+      "credits": "4"
     },
     "122": {
       "name": "Introductory Physics II",
       "req": ["math152,phys121"],
-      "credits": ["4"]
+      "credits": "4"
     },
-    "122L": {
+    "122l": {
       "name": "Introductory Physics Laboratory",
       "req": ["phys122"],
-      "credits": ["3"]
+      "credits": "3"
     }
   },
   "ges": {
     "110": {
       "name": "Physical Geography",
-      "credits": ["3"]
+      "credits": "3"
     },
     "120": {
       "name": "Environmental Science and Conservation",
-      "credits": ["3"]
+      "credits": "3"
     },
     "286": {
       "name": "Exploring the Environment: A Geo-Spatial Perspective",
-      "credits": ["4"]
+      "credits": "4"
     }
   },
   "sci": {
     "100": {
-      "name": "Water; An Interdisciplinary Study"
+      "name": "Water; An Interdisciplinary Study",
+      "credits": "2"
+
     },
-    "101L": {
+    "101l": {
       "name": "Quantitative Reasoning: Measurement and Skills Lab",
       "req": ["math150"],
-      "credits": ["2"]
+      "credits": "2"
     }
   },
   "chem": {
     "101": {
       "name": "Principles of Chemistry I",
       "req": ["math106,math150,math151,math155"],
-      "credits": ["4"]
+      "credits": "4"
     },
     "102": {
       "name": "Principles of Chemistry II",
       "req": ["chem101"],
-      "credits": ["4"]
+      "credits": "4"
     },
-    "102L": {
+    "102l": {
       "name": "Introductory Chemistry Lab I",
       "req": ["chem101"],
-      "credits": ["2"]
+      "credits": "2"
     }
   },
   "stat": {
     "355": {
       "name": "Introduction to Probability and Statistics for Scientists and Engineers",
       "req": ["math142,math152,math225,math251"],
-      "credits": ["4"]
+      "credits": "4"
     }
   },
   "math": {
     "106": {
       "name": "Algebra and Elementary Functions",
-      "credits": ["3"]
+      "credits": "3"
     },
     "115": {
       "name": "Finite Mathematics",
       "req": ["math106"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "140": {
       "name": "Differential Calculus",
       "req": ["math150"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "141": {
       "name": "Integral Calculus",
       "req": ["math140"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "142": {
       "name": "Calculus Applications and Infinite Series",
       "req": ["math141"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "150": {
       "name": "Precalculus Mathematics",
       "req": ["math106"],
-      "credits": ["4"]
+      "credits": "4"
     },
     "151": {
       "name": "Calculus and Analytic Geometry I",
       "req": ["math150"],
-      "credits": ["4"]
+      "credits": "4"
     },
     "152": {
       "name": "Calculus and Analytic Geometry II",
       "req": ["math151,math141,math155B"],
-      "credits": ["4"]
+      "credits": "4"
     },
     "155": {
       "name": "Applied Calculus",
       "req": ["math106"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "155b": {
       "name": "Calculus of Trigonometric Functions",
       "req": ["math155"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "221": {
       "name": "Introduction to Linear Algebra",
       "req": ["math141,math151,math380"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "225": {
       "name": "Introduction to Differential Equations",
       "req": ["math142,math152"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "251": {
       "name": "Multivariable Calculus",
       "req": ["math142,math152"],
-      "credits": ["4"]
+      "credits": "4"
     },
     "380": {
       "name": "Introduction to Operations Research",
       "req": ["math115,math150"],
-      "credits": ["3"]
+      "credits": "3"
     }
   },
   "cmsc": {
     "201": {
       "name": "Computer Science I for Majors",
-      "credits": ["4"]
+      "credits": "4"
     },
     "202": {
       "name": "Computer Science II for Majors",
       "req": ["cmsc201"],
-      "credits": ["4"]
+      "credits": "4"
     },
     "203": {
       "name": "Discrete Structures",
-      "credits": ["3"]
+      "credits": "3"
     },
     "232": {
       "name": "Advanced Java Techniques",
       "req": ["cmsc202"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "291": {
       "name": "Special Topics in Computer Science",
-      "credits": ["2"]
+      "credits": "2"
     },
     "299": {
       "name": "Independent Study in Computer Science",
-      "credits": ["0"]
+      "credits": "0"
     },
     "304": {
       "name": "Social and Ethical Issues in Information Technology",
       "req": ["cmsc202"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "313": {
       "name": "Computer Organization and Assembly Language Programming",
       "req": ["cmsc202","cmsc203"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "331": {
       "name": "Principles of Programming Language",
       "req": ["cmsc202","cmsc203"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "341": {
       "name": "Data Structures",
       "req": ["cmsc202","cmsc203"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "345": {
       "name": "Software Design and Development",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "352": {
       "name": "Women, Gender, and Information Technology",
-      "credits": ["3"]
+      "credits": "3"
     },
     "391": {
       "name": "Special Topics in Computer Science",
-      "credits": ["3"]
+      "credits": "3"
     },
     "404": {
       "name": "The History of Computers and Computing",
-      "credits": ["3"]
+      "credits": "3"
     },
     "411": {
       "name": "Computer Architecture",
       "req": ["cmsc313"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "421": {
       "name": "Principles of Operating Systems",
       "req": ["cmsc341","cmsc313"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "426": {
       "name": "Principles of Computer Security",
       "req": ["cmsc341","cmsc313"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "427": {
       "name": "Principles of Computer Security",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "431": {
       "name": "Compiler Design Principles",
       "req": ["cmsc313","cmsc331","cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "432": {
       "name": "Object-Oriented Programming Languages and Systems",
       "req": ["cmsc331","cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "433": {
       "name": "Scripting Languages",
       "req": ["cmsc331"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "435": {
       "name": "Computer Graphics",
       "req": ["cmsc313","cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "436": {
       "name": "Data Visualization",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "437": {
       "name": "Graphical User Interface Programming",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "441": {
       "name": "Design and Analysis of Algorithms",
       "req": ["cmsc341", "stat355"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "442": {
       "name": "Information and Coding Theory",
       "req": ["cmsc203"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "443": {
       "name": "Cryptology",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "444": {
       "name": "Information Assurance",
       "req": ["cmsc421", "cmsc481"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "446": {
       "name": "Introduction to Design Patterns",
       "req": ["cmsc331", "cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "447": {
       "name": "Software Engineering I",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "448": {
       "name": "Software Engineering II",
       "req": ["cmsc345,cmsc447"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "451": {
       "name": "Automata Theory and Formal Languages",
       "req": ["cmsc202","cmsc203"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "452": {
       "name": "Logic for Computer Science",
       "req": ["cmsc203"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "453": {
       "name": "Applied Combinatorics and Graph Theory",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "455": {
       "name": "Numerical Computations",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "456": {
       "name": "Symbolic Computation",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "457": {
       "name": "Quantum Computation",
       "req": ["cmsc203", "math221"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "461": {
       "name": "Database Management Systems",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "465": {
       "name": "Introduction to Electronic Commerce",
       "req": ["cmsc461","cmsc481"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "466": {
       "name": "Electronic Commerce Technology",
       "req": ["cmsc461","cmsc481"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "471": {
       "name": "Introduction to Artificial Intelligence",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "473": {
       "name": "Introduction to Natural Language Processing",
       "req": ["cmsc331"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "475": {
       "name": "Introduction to Neural Networks",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "476": {
       "name": "Information Retrieval",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "477": {
       "name": "Agent Architectures and Multi-Agent Systems",
       "req": ["cmsc471"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "478": {
       "name": "Introduction to Machine Learning",
       "req": ["cmsc471"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "479": {
       "name": "Introduction to Robotics",
       "req": ["cmsc471"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "481": {
       "name": "Computer Networks",
       "req": ["cmsc341"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "483": {
       "name": "Parallel and Distributed Processing",
       "req": ["cmsc421"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "484": {
       "name": "Java Server Technologies",
       "req": ["cmsc202"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "487": {
       "name": "Introduction To Network Security",
       "req": ["cmsc421","cmsc481"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "491": {
       "name": "Special Topics in Computer Science",
-      "credits": ["3"]
+      "credits": "3"
     },
     "493": {
       "name": "Capstone Games Group Project",
       "req": ["cmsc435", "cmsc471"],
-      "credits": ["3"]
+      "credits": "3"
     },
     "495": {
       "name": "Honors Thesis",
-      "credits": ["3"]
+      "credits": "3"
     },
     "498": {
       "name": "Independent Study in Computer Science for CMSC Interns and Coop Students",
-      "credits": ["3"]
+      "credits": "3"
     },
     "499": {
       "name": "Independent Study in Computer Science",
-      "credits": ["0"]
+      "credits": "0"
     }
   }
 }
