@@ -161,6 +161,7 @@
     },
     "203": {
       "name": "Discrete Structures",
+      "req" : ["math151"],
       "credits": "3"
     },
     "232": {
