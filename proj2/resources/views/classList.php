@@ -98,7 +98,7 @@
 							<!-- chem101 -> chem102 -> chem102L -> GES110 -->
 							<?php 
 								$courses = ['chem' => ['101', '102', '102L'], 'biol' => ['141', '142'],'phys' => ['121', '122', '122L'],
-											'ges' => ['110', '120', '286']];
+											'ges' => ['110', '120', '286'], 'sci' => ['101L']];
 
 								foreach($courses as $dept => $list): foreach($list as $class): ?>
 

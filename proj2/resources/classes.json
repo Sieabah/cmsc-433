@@ -38,9 +38,9 @@
     "100": {
       "name": "Water; An Interdisciplinary Study"
     },
-    "101l": {
+    "101L": {
       "name": "Quantitative Reasoning: Measurement and Skills Lab",
-      "req": ["math106,math150"]
+      "req": ["math150"]
     }
   },
   "chem": {
