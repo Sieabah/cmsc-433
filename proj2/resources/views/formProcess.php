@@ -1,3 +1,27 @@
+<?php
+ 
+  function insertRecords(){
+    $_SESSION["name"] = $_POST["name"];
+    $_SESSION["email"] = $_POST["email"];
+    $_SESSION["phone"] =  $_POST["contactnum"];
+    $_SESSION["campusid"] = $_POST["campusid"];    
+  }
+
+
+  function getSummary(){
+    $courses = $_POST["course"];
+    $db = new DB();
+    $val = $db->query("SELECT * FROM classes")->fetch(PDO::FETCH_OBJ);
+    print_r($val);
+    
+    foreach($courses as $val){
+      echo($val . "<br />");
+      
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -35,7 +59,7 @@
             ?>
             <tr>
             <td><?php echo $course["name"]; ?></td>
-            <td><?php echo $course[credits]; ?></td>
+            <td><?php echo $course["credits"]; ?></td>
             </tr>
 
           <?php endforeach; ?>
@@ -48,5 +72,4 @@
     </div>
   </body>
 </html>
-
-
+ 
