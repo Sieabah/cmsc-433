@@ -62,7 +62,6 @@
 										$courses['cmsc'][] = $class->number;
 								}
 
-								
 								foreach($courses as $dept => $list): foreach($list as $class): ?>
 
 									<label class='course' id="<?= $dept.$class; ?>label" for="<?= $dept.$class; ?>" onclick='labelOnClick(this)' onmouseover='labelOnMouseover(this)' >
@@ -108,22 +107,6 @@
 									<input type='checkbox' class='' name='course[]' id="<?= $dept.$class; ?>" value="<?= $dept.$class; ?>">
 
 								<?php endforeach; endforeach; ?>
-							</div>
-							<div class="col-xs-12" id="path2">
-							<!-- chem101 -> chem102 -> biol141 -> any lab -->
-						
-							</div>
-							<div class="col-xs-12" id="path3">
-							<!-- biol 141 -> biol142 -> biol Lab -> phys121 -->
-							</div>
-							<div class="col-xs-12" id="path4">
-							<!-- phys121 -> phsy122 -> ges286 -->
-							</div>
-							<div class="col-xs-12" id="path5">
-							<!-- phys121 -> phys122 -> phys 122L -> math251  -->
-							</div>
-							<div class="col-xs-12" id="path6">
-							<!-- sci -> sci -> ges110/120 -> sci101L -->
 							</div>
 						</div>
 					</div>
