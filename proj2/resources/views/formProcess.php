@@ -1,5 +1,9 @@
 <?php
- 
+   /**
+   * Inserts records into session after sanitizing them
+   *
+   * @author Joshua Standiford
+   */
   function insertRecords(){
     $_SESSION["name"] = $_POST["name"];
     $_SESSION["email"] = $_POST["email"];
@@ -8,26 +12,39 @@
   }
 
 
-  function getSummary(){
-    $courses = $_POST["course"];
-    $creditArr = array();
-    $temp2;
+ function getCourseCredits(){
     $db = new DB();
+
+    $cArr;
+    
     $courseData = $db->query("SELECT course, credits FROM classes")->fetchAll(PDO::FETCH_OBJ);
+
     foreach($courseData as $val){
-      $temp2["$val->course"] = $val->credits;
+      $cArr["$val->course"] = $val->credits;
     }
 
+    return $cArr;
+ }
 
+  /**
+   * This function grabs pertinent information from database, creates
+   * an associative array with course name as key, and credits as val
+   * Returns array, containing associative array with credit info based
+   * on classes taken.
+   * @author Joshua Standiford
+   */
+  function getSummary(){
+    $courses = $_POST["course"];
+
+    $creditArr = array();
+
+    $cArr = getCourseCredits();
 
     foreach($courses as $class){
-      $temp["credits"] = $temp2[$class];  
+      $temp["credits"] = $cArr[$class];  
       $temp["name"] = $class;
       array_push($creditArr, $temp);
     }
-
-     
-
     return $creditArr;
   }
 
