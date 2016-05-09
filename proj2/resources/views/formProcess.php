@@ -14,8 +14,6 @@
 
  function getCourseCredits(){
     $db = new DB();
-
-    $cArr;
     
     $courseData = $db->query("SELECT course, credits FROM classes")->fetchAll(PDO::FETCH_OBJ);
 
@@ -34,8 +32,12 @@
    * @author Joshua Standiford
    */
   function getSummary(){
-    $courses = $_POST["course"];
-
+    if(isset($_POST["course"])){
+      $courses = $_POST["course"];
+    }
+    else{
+      $courses = array();
+    }
     $creditArr = array();
 
     $cArr = getCourseCredits();
@@ -54,7 +56,7 @@
 <html>
   <head>
     <meta charset="utf8">
-    <link rel="stylesheet" href="../../public/classList.css">
+    <link rel="stylesheet" href="/classList.css">
     <title>Computer Science Class List</title>
   </head>
   <body>
