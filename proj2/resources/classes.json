@@ -2,7 +2,7 @@
   "biol": {
     "141": {
       "name": "Foundations of Biology: Cells, Energy and Organisms",
-      "req": ["math150,math151,math155"]
+      "req": ["math150,math151"]
     },
     "142": {
       "name": "Foundations of Biology: Ecology and Evolution",
@@ -16,7 +16,7 @@
     },
     "122": {
       "name": "Introductory Physics II",
-      "req": ["math152", "math121"]
+      "req": ["math152", "phys121"]
     },
     "122l": {
       "name": "Introductory Physics Laboratory",
@@ -52,7 +52,7 @@
       "name": "Principles of Chemistry II",
       "req": ["chem101"]
     },
-    "102l": {
+    "102L": {
       "name": "Introductory Chemistry Lab I",
       "req": ["chem101"]
     }

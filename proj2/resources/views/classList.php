@@ -94,10 +94,10 @@
 						<!-- path trees for the suggested science courses -->
 						<div id="sciences">
 							<h4>Science Courses</h4>
-							<div class="col-xs-12">
+							<div class="col-xs-12" id="path1">
 							<!-- chem101 -> chem102 -> chem102L -> GES110 -->
-							<?php
-								$courses = ['chem' => ['101', '102', '102L'], 'ges' => ['110']];
+							<?php 
+								$courses = ['chem' => ['101', '102', '102L'], 'biol' => ['141', '142'], 'ges' => ['110', '120', '286'], 'phys' => ['121', '122', '122L']];
 
 								foreach($courses as $dept => $list): foreach($list as $class): ?>
 
@@ -108,19 +108,20 @@
 
 								<?php endforeach; endforeach; ?>
 							</div>
-							<div id="path2">
+							<div class="col-xs-12" id="path2">
 							<!-- chem101 -> chem102 -> biol141 -> any lab -->
+						
 							</div>
-							<div id="path3">
+							<div class="col-xs-12" id="path3">
 							<!-- biol 141 -> biol142 -> biol Lab -> phys121 -->
 							</div>
-							<div id="path4">
+							<div class="col-xs-12" id="path4">
 							<!-- phys121 -> phsy122 -> ges286 -->
 							</div>
-							<div id="path5">
+							<div class="col-xs-12" id="path5">
 							<!-- phys121 -> phys122 -> phys 122L -> math251  -->
 							</div>
-							<div id="path6">
+							<div class="col-xs-12" id="path6">
 							<!-- sci -> sci -> ges110/120 -> sci101L -->
 							</div>
 						</div>
