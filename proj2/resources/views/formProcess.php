@@ -5,10 +5,14 @@
    * @author Joshua Standiford
    */
   function insertRecords(){
-    $_SESSION["name"] = $_POST["name"];
-    $_SESSION["email"] = $_POST["email"];
-    $_SESSION["phone"] =  $_POST["contactnum"];
-    $_SESSION["campusid"] = $_POST["campusid"];    
+    $ses = new Session();
+    if(($errs = Validator::validatePost(new css_Input($_POST))) != null){
+      $ses->put("name", $_POST["name"]);
+      $ses->put("email", $_POST["email"]);
+      $ses->put("phone", $_POST["contactnum"]);
+      $ses->put("campusid", $_POST["campusid"]); 
+    }
+
   }
 
 
@@ -38,13 +42,14 @@
     else{
       $courses = array();
     }
+
     $creditArr = array();
 
     $cArr = getCourseCredits();
 
     foreach($courses as $class){
       $temp["credits"] = $cArr[$class];  
-      $temp["name"] = $class;
+      $temp["name"] = strtoupper($class);
       array_push($creditArr, $temp);
     }
     return $creditArr;
