@@ -94,7 +94,6 @@
 						<div id="sciences">
 							<h4>Science Courses</h4>
 							<div class="col-xs-12" id="path1">
-							<!-- chem101 -> chem102 -> chem102L -> GES110 -->
 							<?php 
 								$courses = ['chem' => ['101', '102', '102l'], 'biol' => ['141', '142'],'phys' => ['121', '122', '122l'],
 											'ges' => ['110', '120', '286'], 'sci' => ['101l']];
@@ -138,6 +137,14 @@
 										</td>
 										<td>
 											<span id="reqcs">201, 202, 203, 304, 313, 331, 341, 411, 421, 441, 447</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Required Sci Classes:</strong>
+										</td>
+										<td>
+											<span id="reqsci">PHYS121, PHYS122, PHYS122L</span>
 										</td>
 									</tr>
 								</table>

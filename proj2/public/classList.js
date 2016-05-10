@@ -51,6 +51,7 @@ ClassNode.prototype.markTaken = function(){
     updateCredits(classes[this.id].credits);
     updateWritingIntensive(this.id,"mark");
     updateRequirements(this.id,"mark");
+    updateSciRequirements(this.id,"mark");
     //check which children are made available by taking this class
     var openedClasses = [];
     for(var i=0, len = this.children.length; i < len; i++){
@@ -71,6 +72,7 @@ ClassNode.prototype.clearTaken = function(){
     updateCredits(-classes[this.id].credits);
     updateWritingIntensive(this.id,"clear");
     updateRequirements(this.id,"clear");
+    updateSciRequirements(this.id,"clear");
     //recurse through children, clearing any that were marked as taken
     for(var i=0, len = this.children.length; i < len; i++){
 	if(this.children[i].taken == true && !this.children[i].isAvailable()){
@@ -85,7 +87,8 @@ creditCounter = 0;
 requirements = ['201','202','203','304','313','331','341','411','421','441','447'];
 notTakenRequirements = ['201','202','203','304','313','331','341','411','421','441','447'];
 
-
+scirequirements = ['PHYS121', 'PHYS122', 'PHYS122L'];
+notTakenSciRequirements = ['PHYS121', 'PHYS122', 'PHYS122L'];
 /*
  * initializeDependencies() reads the class dictionary from classDictionary.js and uses it to initialize a graph of class Nodes
  * Input: None
@@ -175,6 +178,30 @@ function updateRequirements(id,mode){
 	}
 	
 }
+
+
+function updateSciRequirements(id,mode){
+	//id = id.substr(4); //trim the cmsc off the id
+	id = id.toUpperCase();
+
+	index = scirequirements.indexOf(id); //check if the id is a cmsc requirement
+	//if it is in the requirements list,
+	if(index>-1){
+		//if we are marking as taken, then remove from the list of outstanding reqs
+		if(mode=='mark'){
+			notTakenSciRequirements.splice(notTakenSciRequirements.indexOf(id),1);
+		}
+		//otherwise, put it back in the list
+		else{
+			notTakenSciRequirements.push(id);
+			notTakenSciRequirements = notTakenSciRequirements.sort();  //this is not so efficient
+		}
+		//update the html
+		document.getElementById('reqsci').innerHTML = reqPrint(notTakenSciRequirements);		
+	}
+	
+}
+
 
 /*
  * updateWritingIntensive() checks if a course is WI and updates the global variable tracking whether the WI requirement has been satisfied
