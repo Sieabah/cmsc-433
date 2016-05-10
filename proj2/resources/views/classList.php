@@ -147,6 +147,14 @@
 											<span id="reqsci">PHYS121, PHYS122, PHYS122L, CHEM101, CHEM102, CHEM102L, BIOL141, BIOL142, GES110, GES120, GES286</span>
 										</td>
 									</tr>
+									<tr>
+										<td>
+											<strong>Required Math Classes:</strong>
+										</td>
+										<td>
+											<span id="reqmath">MATH150, MATH151, MATH152, MATH221, STAT355</span>
+										</td>
+									</tr>
 								</table>
 							</div>
 							<div id="courseinfo" class="col-xs-12">

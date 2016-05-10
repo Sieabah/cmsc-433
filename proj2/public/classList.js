@@ -52,6 +52,7 @@ ClassNode.prototype.markTaken = function(){
     updateWritingIntensive(this.id,"mark");
     updateRequirements(this.id,"mark");
     updateSciRequirements(this.id,"mark");
+    updateMathRequirements(this.id,"mark");
     //check which children are made available by taking this class
     var openedClasses = [];
     for(var i=0, len = this.children.length; i < len; i++){
@@ -73,6 +74,7 @@ ClassNode.prototype.clearTaken = function(){
     updateWritingIntensive(this.id,"clear");
     updateRequirements(this.id,"clear");
     updateSciRequirements(this.id,"clear");
+    updateMathRequirements(this.id,"clear");
     //recurse through children, clearing any that were marked as taken
     for(var i=0, len = this.children.length; i < len; i++){
 	if(this.children[i].taken == true && !this.children[i].isAvailable()){
@@ -87,16 +89,19 @@ creditCounter = 0;
 requirements = ['201','202','203','304','313','331','341','411','421','441','447'];
 notTakenRequirements = ['201','202','203','304','313','331','341','411','421','441','447'];
 
-scirequirements = ['PHYS121', 'PHYS122', 'PHYS122L', 'CHEM101', 'CHEM102', 'CHEM102L',
-				   'BIOL141', 'BIOL142', 'GES110', 'GES120', 'GES286'];
-notTakenSciRequirements = ['PHYS121', 'PHYS122', 'PHYS122L', 'CHEM101', 'CHEM102', 'CHEM102L',
-				   'BIOL141', 'BIOL142', 'GES110', 'GES120', 'GES286'];
-
+mathrequirements = ['MATH150', 'MATH151', 'MATH152', 'MATH221', 'STAT355'];
+notTakenMathRequirements = ['MATH150', 'MATH151', 'MATH152', 'MATH221', 'STAT355'];
 
 labs = ['CHEM102L', 'PHYS122L', 'GES286'];
 labsTaken = [];
-sciClasses = ['PHYS121', 'PHYS122', 'CHEM101', 'CHEM102', 'BIOL141', 'BIOL142', 'GES110', 'GES120'];
+sciClasses = ['PHYS121', 'PHYS122', 'CHEM101', 'CHEM102', 'BIOL141', 'BIOL142', 'GES110', 'GES120', 'MATH251'];
 sciClassesTaken = [];
+
+scirequirements =  labs.concat(sciClasses);
+notTakenSciRequirements =  labs.concat(sciClasses);
+
+
+
 
 labsDone = false;
 sciDone = false;
@@ -189,6 +194,29 @@ function updateRequirements(id,mode){
 	}
 	
 }
+
+function updateMathRequirements(id,mode){
+	id = id.toUpperCase();
+	index = mathrequirements.indexOf(id); //check if the id is a cmsc requirement
+	//if it is in the requirements list,
+	 
+
+	if(index>-1){
+		//if we are marking as taken, then remove from the list of outstanding reqs
+		if(mode=='mark'){
+			notTakenMathRequirements.splice(notTakenMathRequirements.indexOf(id),1);
+		}
+		//otherwise, put it back in the list
+		else{
+			notTakenMathRequirements.push(id);
+			notTakenMathRequirements = notTakenMathRequirements.sort();  //this is not so efficient
+		}
+		//update the html
+		document.getElementById('reqmath').innerHTML = reqPrint(notTakenMathRequirements);		
+	}
+	
+}
+
 function updateSciRequirements(id,mode){
 	id = id.toUpperCase();
 
@@ -229,7 +257,7 @@ function updateSciRequirements(id,mode){
 			document.getElementById('reqsci').innerHTML = reqPrint(notTakenSciRequirements);		
 		}
 		else{
-			document.getElementById('reqsci').innerHTML = "FINISHED";
+			document.getElementById('reqsci').innerHTML = "Completed";
 		}	
 	}
 	
