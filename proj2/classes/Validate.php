@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Class Validator
+ * This handles validation at a global level, essentially this exists purely because formProcess did this directly
+ *  in the view beforehand.
+ *
+ * @author Christopher Sidell (csidell1@umbc.edu)
+ */
 class Validator {
     /**
      * Sanitizes a string to prevent XSS attacks and non-standard data
@@ -22,7 +29,9 @@ class Validator {
      * Basically, this function tries to stop bad things from going through
      *
      * @return {array} $valid
-     *   whether the given data is valid or not. You should not proceed if this isnt true
+     *   Given array of errors or null if validation passed
+     *
+     * Updates @author Christopher Sidell (csidell1@umbc.edu)
      */
     public static function validatePost(css_Input $input){
         $errs = [];

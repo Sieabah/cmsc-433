@@ -104,31 +104,6 @@ class DB
     }
 
     /**
-     * newQuery
-     * NOT IMPLEMENTED
-     * @author Christopher Sidell (csidell1@umbc.edu)
-     * @return $this
-     */
-    public function newQuery(){
-        $this->bindings = [];
-        $this->wheres = [];
-
-        return $this;
-    }
-
-    /**
-     * select
-     * NOT IMPLEMENTED
-     * @param $column {string} Colulmn name
-     * @param $value {string}
-     * @author Christopher Sidell (csidell1@umbc.edu)
-     * @return null
-     */
-    public function select($column, $value){
-        return null;
-    }
-
-    /**
      * all
      * Returns all rows for the given table
      * @author Christopher Sidell (csidell1@umbc.edu)
@@ -174,4 +149,5 @@ class DB
     }
 }
 
+//Load the DB into the App container
 app()->db = (new DB());

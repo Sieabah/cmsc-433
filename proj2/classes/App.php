@@ -3,20 +3,42 @@
 global $app;
 $app = (object)[];
 
+/**
+ * Global application reference helper
+ * @author Christopher Sidell (csidell1@umbc.edu)
+ * @return object
+ */
 function app(){
     global $app;
     return $app;
 }
 
+/**
+ * Class App
+ * The base framework class that holds references and routing
+ * @author Christopher Sidell (csidell1@umbc.edu)
+ */
 class App{
 
+    /**
+     * Controller method for the index page
+     * @author Christopher Sidell (csidell1@umbc.edu)
+     * @return array
+     */
     public static function index(){
         $data = [];
+
+        //Return data for catalog
         $data['catalog'] = app()->studentclass->getList();
         
         return $data;
     }
 
+    /**
+     * Controller method for form processing
+     * @author Christopher Sidell (csidell1@umbc.edu)
+     * @return array
+     */
     public static function process(){
         $data = [];
         $input = new css_Input($_POST);
@@ -61,6 +83,12 @@ class App{
         return $data;
     }
 
+    /**
+     * Very simple naive router
+     * @author Christopher Sidell (csidell1@umbc.edu)
+     * @param $uri URI of the route
+     * @return array
+     */
     public static function route($uri){
         switch($uri){
             case '/':
@@ -72,6 +100,11 @@ class App{
         }
     }
 
+    /**
+     * This handles running the router and gathering the data up for making the view
+     * @author Christopher Sidell (csidell1@umbc.edu)
+     * @return string
+     */
     public static function run(){
         if(isset(app()->routes[$_SERVER['REQUEST_URI']])){
             return view()->make(app()->routes[$_SERVER['REQUEST_URI']], self::route($_SERVER['REQUEST_URI']));
@@ -81,5 +114,6 @@ class App{
     }
 }
 
+//Load the application class into the app container
 app()->App = new App;
 

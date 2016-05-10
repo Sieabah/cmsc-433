@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class css_Input
+ * Give the class an array to reference and this will allow you to access members of the array with helpers.
+ */
 class css_Input {
     private $internal;
 

@@ -1,10 +1,22 @@
 <?php
 
+/**
+ * startsWith helper
+ * @param $str
+ * @param $needle
+ * @return bool
+ */
 function startsWith($str, $needle) {
     // search backwards starting from haystack length characters from the end
     return $needle === "" || strrpos($str, $needle, -strlen($str)) !== false;
 }
 
+/**
+ * endsWith helper
+ * @param $str
+ * @param $needle
+ * @return bool
+ */
 function endsWith($str, $needle) {
     // search forward starting from end minus needle length characters
     return $needle === "" || (($temp = strlen($str) - strlen($needle)) >= 0 && strpos($str, $needle, $temp) !== false);

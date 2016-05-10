@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * populate.php
+ * 
+ * This exists primarily to setup the database without having to manually do it.
+ */
 require_once(dirname(__FILE__).'/../load.php');
 
 /**

@@ -89,4 +89,5 @@ class StudentClass extends DB
     }
 }
 
+//Load the studentclass into the app container
 app()->studentclass = (new StudentClass);
