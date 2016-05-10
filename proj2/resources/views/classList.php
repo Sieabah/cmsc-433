@@ -144,7 +144,7 @@
 											<strong>Required Sci Classes:</strong>
 										</td>
 										<td>
-											<span id="reqsci">PHYS121, PHYS122, PHYS122L</span>
+											<span id="reqsci">PHYS121, PHYS122, PHYS122L, CHEM101, CHEM102, CHEM102L, BIOL141, BIOL142, GES110, GES120, GES286</span>
 										</td>
 									</tr>
 								</table>

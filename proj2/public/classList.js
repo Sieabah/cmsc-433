@@ -87,8 +87,19 @@ creditCounter = 0;
 requirements = ['201','202','203','304','313','331','341','411','421','441','447'];
 notTakenRequirements = ['201','202','203','304','313','331','341','411','421','441','447'];
 
-scirequirements = ['PHYS121', 'PHYS122', 'PHYS122L'];
-notTakenSciRequirements = ['PHYS121', 'PHYS122', 'PHYS122L'];
+scirequirements = ['PHYS121', 'PHYS122', 'PHYS122L', 'CHEM101', 'CHEM102', 'CHEM102L',
+				   'BIOL141', 'BIOL142', 'GES110', 'GES120', 'GES286'];
+notTakenSciRequirements = ['PHYS121', 'PHYS122', 'PHYS122L', 'CHEM101', 'CHEM102', 'CHEM102L',
+				   'BIOL141', 'BIOL142', 'GES110', 'GES120', 'GES286'];
+
+
+labs = ['CHEM102L', 'PHYS122L', 'GES286'];
+labsTaken = [];
+sciClasses = ['PHYS121', 'PHYS122', 'CHEM101', 'CHEM102', 'BIOL141', 'BIOL142', 'GES110', 'GES120'];
+sciClassesTaken = [];
+
+labsDone = false;
+sciDone = false;
 /*
  * initializeDependencies() reads the class dictionary from classDictionary.js and uses it to initialize a graph of class Nodes
  * Input: None
@@ -178,14 +189,27 @@ function updateRequirements(id,mode){
 	}
 	
 }
-
-
 function updateSciRequirements(id,mode){
-	//id = id.substr(4); //trim the cmsc off the id
 	id = id.toUpperCase();
 
 	index = scirequirements.indexOf(id); //check if the id is a cmsc requirement
 	//if it is in the requirements list,
+	//Checks if the lab requirements are completed
+	if(labs.indexOf(id) > -1 && labsTaken.indexOf(id) < 0){
+		labsTaken.push(id);
+	}
+	else if(labs.indexOf(id) > -1 && labsTaken.indexOf(id) > -1){
+		labsTaken.splice(labsTaken.indexOf(id),1);
+	}
+ 
+	//Checks if the course requirements are completed.
+	if(sciClasses.indexOf(id) > -1 && sciClassesTaken.indexOf(id) < 0){
+		sciClassesTaken.push(id);
+	}
+	else if(sciClasses.indexOf(id) > -1 && sciClassesTaken.indexOf(id) > -1){
+		sciClassesTaken.splice(sciClassesTaken.indexOf(id),1);
+	}
+
 	if(index>-1){
 		//if we are marking as taken, then remove from the list of outstanding reqs
 		if(mode=='mark'){
@@ -193,11 +217,20 @@ function updateSciRequirements(id,mode){
 		}
 		//otherwise, put it back in the list
 		else{
-			notTakenSciRequirements.push(id);
+			notTakenSciRequirements.push(id);	
 			notTakenSciRequirements = notTakenSciRequirements.sort();  //this is not so efficient
-		}
+ 		}
+
+		labsDone = labsTaken.length > 0 ? true : false; 
+		sciDone = sciClassesTaken.length > 2 ? true : false;
+		
 		//update the html
-		document.getElementById('reqsci').innerHTML = reqPrint(notTakenSciRequirements);		
+		if(!(labsDone && sciDone)){
+			document.getElementById('reqsci').innerHTML = reqPrint(notTakenSciRequirements);		
+		}
+		else{
+			document.getElementById('reqsci').innerHTML = "FINISHED";
+		}	
 	}
 	
 }
