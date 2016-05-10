@@ -254,7 +254,7 @@ function updateSciRequirements(id,mode){
 		
 		//update the html
 		if(!(labsDone && sciDone)){
-			document.getElementById('reqsci').innerHTML = reqPrint(notTakenSciRequirements);		
+			document.getElementById('reqsci').innerHTML = "Not Completed";
 		}
 		else{
 			document.getElementById('reqsci').innerHTML = "Completed";

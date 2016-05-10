@@ -144,7 +144,7 @@
 											<strong>Required Sci Classes:</strong>
 										</td>
 										<td>
-											<span id="reqsci">PHYS121, PHYS122, PHYS122L, CHEM101, CHEM102, CHEM102L, BIOL141, BIOL142, GES110, GES120, GES286</span>
+											<span id="reqsci">Not Completed</span>
 										</td>
 									</tr>
 									<tr>
@@ -156,6 +156,7 @@
 										</td>
 									</tr>
 								</table>
+
 							</div>
 							<div id="courseinfo" class="col-xs-12">
 								<h3>Course Information</h3>
@@ -189,7 +190,7 @@
 							</div>
 						</div>
 					</div>
-					<input class="btn btn-primary btn-lg pull-right" type="submit" id="submitbutton" value="SUBMIT">
+				  <input class="btn btn-primary btn-lg pull-right" type="submit" id="submitbutton" value="SUBMIT">
 				</form>
 			</div>
 		</div>
