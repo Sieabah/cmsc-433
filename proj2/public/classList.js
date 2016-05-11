@@ -113,6 +113,12 @@ labsDone = false;
 sciDone = false;
 pathReq = false;
 
+/*
+ * checkRequirements() - Checks the classes taken against specific paths. 
+ * Inputs: sci - array containing taken science classes
+ * Outputs: Returns true, or false, depending on requirements.
+ *
+ */
 function checkRequirements(sci){
 
 	anyLab = false;
@@ -318,8 +324,8 @@ function updateSciRequirements(id,mode){
 			notTakenSciRequirements = notTakenSciRequirements.sort();  //this is not so efficient
  		}
 
-		//labsDone = labsTaken.length > 0 ? true : false; 
-		//sciDone = sciClassesTaken.length > 1 ? true : false;
+		labsDone = labsTaken.length > 0 ? true : false; 
+		sciDone = sciClassesTaken.length > 2 ? true : false;
 		
 
 
