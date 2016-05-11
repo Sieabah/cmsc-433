@@ -14,7 +14,7 @@
 
 		<script type="text/javascript" src="/classDictionary.js"></script>
 	</head>
-	<body>
+	<body onload="clearChecked();">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">

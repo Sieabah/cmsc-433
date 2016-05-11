@@ -96,6 +96,7 @@ labs = ['CHEM102L', 'PHYS122L', 'GES286'];
 labsTaken = [];
 sciClasses = ['PHYS121', 'PHYS122', 'CHEM101', 'CHEM102', 'BIOL141', 'BIOL142', 'GES110', 'GES120', 'MATH251'];
 sciClassesTaken = [];
+ 
 
 scirequirements =  labs.concat(sciClasses);
 notTakenSciRequirements =  labs.concat(sciClasses);
@@ -105,6 +106,8 @@ notTakenSciRequirements =  labs.concat(sciClasses);
 
 labsDone = false;
 sciDone = false;
+ 
+
 /*
  * initializeDependencies() reads the class dictionary from classDictionary.js and uses it to initialize a graph of class Nodes
  * Input: None
@@ -146,6 +149,19 @@ function initializeDependencies(){
 
 	}
 }
+
+/*
+ * clearChecked() clears the check boxes on page load to clear browser memory.
+ * Input: None
+ * Output: None
+ */
+function clearChecked(){
+	checked = document.getElementsByName('course[]');
+	for(var i = 0; i < checked.length; i++){
+		checked[i].checked = false;
+	}
+}
+
 
 /*
  * reqPrint() returns a string representation of an array or none if empty
@@ -194,7 +210,12 @@ function updateRequirements(id,mode){
 	}
 	
 }
-
+ 
+/*
+ * updateMathRequirements() maintains the list of Math requirements that still need to be taken
+ * Input: course id; whether the mode is "mark" or "clear" for the update (marking is marking a class as taken)
+ * Output: None
+ */
 function updateMathRequirements(id,mode){
 	id = id.toUpperCase();
 	index = mathrequirements.indexOf(id); //check if the id is a cmsc requirement
@@ -216,10 +237,14 @@ function updateMathRequirements(id,mode){
 	}
 	
 }
-
+/*
+ * updateSciRequirements() maintains the list of Math requirements that still need to be taken
+ * Input: course id; whether the mode is "mark" or "clear" for the update (marking is marking a class as taken)
+ * Output: None
+ */
 function updateSciRequirements(id,mode){
 	id = id.toUpperCase();
-
+	 
 	index = scirequirements.indexOf(id); //check if the id is a cmsc requirement
 	//if it is in the requirements list,
 	//Checks if the lab requirements are completed
@@ -250,7 +275,7 @@ function updateSciRequirements(id,mode){
  		}
 
 		labsDone = labsTaken.length > 0 ? true : false; 
-		sciDone = sciClassesTaken.length > 2 ? true : false;
+		sciDone = sciClassesTaken.length > 1 ? true : false;
 		
 		//update the html
 		if(!(labsDone && sciDone)){
