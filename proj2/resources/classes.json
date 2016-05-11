@@ -1,5 +1,9 @@
 {
   "biol": {
+    "100l": {
+      "name": "Concepts of Experimental Biology",
+      "credits": "2"
+    },
     "141": {
       "name": "Foundations of Biology: Cells, Energy and Organisms",
       "req": ["math150,math151"],

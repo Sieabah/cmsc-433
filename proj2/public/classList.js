@@ -92,12 +92,17 @@ notTakenRequirements = ['201','202','203','304','313','331','341','411','421','4
 mathrequirements = ['MATH150', 'MATH151', 'MATH152', 'MATH221', 'STAT355'];
 notTakenMathRequirements = ['MATH150', 'MATH151', 'MATH152', 'MATH221', 'STAT355'];
 
-labs = ['CHEM102L', 'PHYS122L', 'GES286'];
+labs = ['CHEM102L', 'PHYS122L', 'GES286', 'BIOL100L', 'SCI101L'];
 labsTaken = [];
-sciClasses = ['PHYS121', 'PHYS122', 'CHEM101', 'CHEM102', 'BIOL141', 'BIOL142', 'GES110', 'GES120', 'MATH251'];
+sciClasses = ['PHYS121', 'PHYS122', 'CHEM101', 'CHEM102', 'BIOL141', 'BIOL142', 'GES110', 'GES120', 'MATH251', 'SCI100'];
 sciClassesTaken = [];
  
-
+path1 = ['CHEM101','CHEM102','CHEM102L','GES110'];
+path2 = ['CHEM101','CHEM102','BIOL141'];
+path3 = ['BIOL141','BIOL142','PHYS121'];
+path4 = ['PHYS121','PHYS122','GES286'];
+path5 = ['PHYS121','PHYS122','PHYS122L','MATH251'];
+path6 = ['SCI100','GES110','GES120','SCI101L'];
 scirequirements =  labs.concat(sciClasses);
 notTakenSciRequirements =  labs.concat(sciClasses);
 
@@ -106,7 +111,39 @@ notTakenSciRequirements =  labs.concat(sciClasses);
 
 labsDone = false;
 sciDone = false;
- 
+pathReq = false;
+
+function checkRequirements(sci){
+
+	anyLab = false;
+	bioLab = labsTaken.indexOf('BIOL100L') > -1 ? true : false;;
+
+	for(var i = 0; i < sci.length; i++){
+		anyLab = labsTaken.indexOf(sci[i]) > -1 ? true : false;
+		if(anyLab){break;}
+	}
+
+	//Path 1
+	if((sci.indexOf(path1[0]) > -1 && sci.indexOf(path1[1]) > -1 && sci.indexOf(path1[2]) > -1 && sci.indexOf(path1[3]) > -1)){
+		return true;
+	}
+	else if((sci.indexOf(path2[0]) > -1 && sci.indexOf(path2[1]) > -1 && sci.indexOf(path2[2])) && anyLab){
+		return true;
+	}
+	else if((sci.indexOf(path3[0]) > -1 && sci.indexOf(path3[1]) > -1 && sci.indexOf(path3[2]) > -1 && bioLab)){
+		return true;
+	}
+	else if(sci.indexOf(path4[0]) > -1 && sci.indexOf(path4[1]) > -1 && sci.indexOf(path4[2]) > -1){
+		return true;
+	}
+	else if(sci.indexOf(path5[0]) > -1 && sci.indexOf(path5[1]) > -1 && sci.indexOf(path5[2]) > -1 && sci.indexOf(path5[3]) > -1){
+		return true;
+	}
+	else if(sci.indexOf(path6[0]) > -1 && (sci.indexOf(path6[1]) > -1 || sci.indexOf(path6[2]) > -1) && sci.indexOf(path6[3]) > -1){
+		return true;
+	}
+	return false;
+}
 
 /*
  * initializeDependencies() reads the class dictionary from classDictionary.js and uses it to initialize a graph of class Nodes
@@ -248,20 +285,27 @@ function updateSciRequirements(id,mode){
 	index = scirequirements.indexOf(id); //check if the id is a cmsc requirement
 	//if it is in the requirements list,
 	//Checks if the lab requirements are completed
-	if(labs.indexOf(id) > -1 && labsTaken.indexOf(id) < 0){
-		labsTaken.push(id);
-	}
-	else if(labs.indexOf(id) > -1 && labsTaken.indexOf(id) > -1){
-		labsTaken.splice(labsTaken.indexOf(id),1);
-	}
- 
-	//Checks if the course requirements are completed.
-	if(sciClasses.indexOf(id) > -1 && sciClassesTaken.indexOf(id) < 0){
-		sciClassesTaken.push(id);
-	}
-	else if(sciClasses.indexOf(id) > -1 && sciClassesTaken.indexOf(id) > -1){
-		sciClassesTaken.splice(sciClassesTaken.indexOf(id),1);
-	}
+	
+	
+	//Check paths first
+
+		if(labs.indexOf(id) > -1 && labsTaken.indexOf(id) < 0){
+			labsTaken.push(id);
+		}
+		else if(labs.indexOf(id) > -1 && labsTaken.indexOf(id) > -1){
+			labsTaken.splice(labsTaken.indexOf(id),1);
+		}
+	 
+		//Checks if the course requirements are completed.
+		if(sciClasses.indexOf(id) > -1 && sciClassesTaken.indexOf(id) < 0){
+			sciClassesTaken.push(id);
+		}
+		else if(sciClasses.indexOf(id) > -1 && sciClassesTaken.indexOf(id) > -1){
+			sciClassesTaken.splice(sciClassesTaken.indexOf(id),1);
+		}
+
+	
+		sci = labsTaken.concat(sciClassesTaken);
 
 	if(index>-1){
 		//if we are marking as taken, then remove from the list of outstanding reqs
@@ -274,15 +318,17 @@ function updateSciRequirements(id,mode){
 			notTakenSciRequirements = notTakenSciRequirements.sort();  //this is not so efficient
  		}
 
-		labsDone = labsTaken.length > 0 ? true : false; 
-		sciDone = sciClassesTaken.length > 1 ? true : false;
+		//labsDone = labsTaken.length > 0 ? true : false; 
+		//sciDone = sciClassesTaken.length > 1 ? true : false;
 		
+
+
 		//update the html
-		if(!(labsDone && sciDone)){
-			document.getElementById('reqsci').innerHTML = "Not Completed";
+		if((labsDone && sciDone) || checkRequirements(sci)){
+			document.getElementById('reqsci').innerHTML = "Completed";
 		}
 		else{
-			document.getElementById('reqsci').innerHTML = "Completed";
+			document.getElementById('reqsci').innerHTML = "Not Completed";
 		}	
 	}
 	
