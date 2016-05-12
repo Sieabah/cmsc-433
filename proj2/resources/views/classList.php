@@ -95,7 +95,7 @@
 							<h4>Science Courses</h4>
 							<div class="col-xs-12" id="path1">
 							<?php 
-								$courses = ['chem' => ['101', '102', '102l'], 'biol' => ['141', '142'],'phys' => ['121', '122', '122l'],
+								$courses = ['chem' => ['101', '102', '102l'], 'biol' => ['141', '142', '101l'],'phys' => ['121', '122', '122l'],
 											'ges' => ['110', '120', '286'], 'sci' => ['100','101l']];
 
 								foreach($courses as $dept => $list): foreach($list as $class): ?>
